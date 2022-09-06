@@ -1,0 +1,29 @@
+.container{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.text{
+    font-family: 'Nunito', sans-serif;
+}
+.text-img{
+    background-image: url(https://jeffnippard.com/wp-content/uploads/2020/06/About-Jeff-Nippard.png);
+    background-size: cover;
+background-repeat: no-repeat;
+width: 50vw;
+height: 100vh;
+}
+li{
+    list-style: none;;
+}
+.orange{
+    color: rgb(242, 163, 5);}
+
+li:nth-child(even) {
+    color: rgb(242, 163, 5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
