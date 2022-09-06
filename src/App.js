@@ -5,7 +5,6 @@ import Navbar from "./core/Navbar/Navbar";
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
       <Routes>
         <Route></Route>
         <Route></Route>
