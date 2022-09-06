@@ -1,0 +1,15 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, #434343, #000000);
+    color: white;
+    padding: 3vw;
+}
+
+@media only screen and (max-width:560px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
