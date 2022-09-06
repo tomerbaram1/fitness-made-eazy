@@ -1,0 +1,311 @@
+@keyframes rightToLeftFullScreen {
+  from {
+    width: 100px;
+    height: 100px;
+    right: -25vw;
+    top: -25vh;
+    border-radius: 100%;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+  }
+}
+@keyframes leftToRightFullScreen {
+  from {
+    width: 100px;
+    height: 100px;
+    right: 75vw;
+    top: -25vh;
+    border-radius: 100%;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+  }
+}
+@keyframes leftToRightSlideFullScreen {
+  from {
+    width: 0;
+    right: 100vw;
+  }
+  to {
+    width: 100vw;
+    right: 0;
+  }
+}
+@keyframes rightToLeftSlideFullScreen {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100vw;
+    right: 0;
+  }
+}
+@keyframes leftToRightSlideHalfScreen {
+  from {
+    width: 0;
+    right: 100vw;
+  }
+  to {
+    width: 60vw;
+    right: 0;
+  }
+}
+@keyframes rightToLeftSlideHalfScreen {
+  from {
+    width: 0;
+    right: 100vw;
+    right: 0;
+  }
+  to {
+    width: 60vw;
+    right: 0;
+  }
+}
+
+.hamburgerContainer {
+  /* margin-top: 30vh;
+  width: 100%;
+  height: 100vh;
+  background-color: black;*/
+  visibility: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .hamburgerContainer {
+    visibility: visible;
+  }
+}
+.hamburgerItemsContainerDisabled {
+  display: none;
+}
+
+.hamburgerItemsContainerActive {
+  top: 0;
+  right: 0;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hamburgerButtonContainer {
+  z-index: 3;
+  position: fixed;
+}
+.hamburger-white {
+  background: #ece9e6cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffffcc,
+    #ece9e6cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffffcc,
+    #ece9e6cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+}
+.hamburger-azurLane {
+  background: #7f7fd5cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4cc,
+    #86a8e7cc,
+    #7f7fd5cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4cc,
+    #86a8e7cc,
+    #7f7fd5cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.hamburger-instagram {
+  background: #833ab4cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045cc,
+    #fd1d1dcc,
+    #833ab4cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045cc,
+    #fd1d1dcc,
+    #833ab4cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.hamburger-skyWhite {
+  background: #e0eafccc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3cc,
+    #e0eafccc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3cc,
+    #e0eafccc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: rgb(29, 28, 28);
+}
+.hamburger-netflix {
+  /* background: #8e0e00; */
+  /* background: -webkit-linear-gradient(to right, #1f1c18, #8e0e00); */
+  background: linear-gradient(
+    to right,
+    rgba(31, 28, 24.8, 0.8),
+    rgba(142, 14, 0, 0.8)
+  );
+  /* background: white; */
+  color: rgb(171, 170, 170);
+}
+.hamburger-deepSpace {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.leftToRightFullScreen {
+  animation-name: leftToRightFullScreen;
+  animation-duration: 0.4s;
+  align-items: center;
+}
+.rightToLeftFullScreen {
+  animation-name: rightToLeftFullScreen;
+  animation-duration: 0.4s;
+  align-items: center;
+}
+.leftToRightSlideFullScreen {
+  animation-name: leftToRightSlideFullScreen;
+  animation-duration: 0.4s;
+  align-items: center;
+}
+.rightToLeftSlideFullScreen {
+  animation-name: rightToLeftSlideFullScreen;
+  animation-duration: 0.4s;
+  align-items: center;
+}
+.leftToRightSlideHalfScreen {
+  animation-name: leftToRightSlideHalfScreen;
+  animation-duration: 0.4s;
+  left: 0;
+  width: 60vw;
+  align-items: flex-start;
+}
+.rightToLeftSlideHalfScreen {
+  animation-name: rightToLeftSlideHalfScreen;
+  animation-duration: 0.4s;
+  width: 60vw;
+  align-items: flex-end;
+}
+
+.toggler {
+  /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.6rem;
+
+  /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+
+.hamburger > div {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: white;
+  height: 2px;
+  width: 60%;
+  transition: all 0.4s ease;
+}
+
+/* CREATING THE TOP AND BOTTOM LINES : 
+TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+
+.hamburger > div::before,
+.hamburger > div::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  background: white;
+  width: 100%;
+  height: 2px;
+  transition: all 0.4s ease;
+}
+
+.hamburger > div::after {
+  top: 10px;
+}
+
+/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+
+.toggler:checked + .hamburger > div {
+  background: rgba(0, 0, 0, 0);
+}
+
+.toggler:checked + .hamburger > div::before {
+  top: 0;
+  transform: rotate(45deg);
+  background: black;
+}
+
+/* AND ROTATING THE TOP AND BOTTOM LINES :  */
+
+.toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(135deg);
+  background: black;
+}
+.left {
+  top: 0;
+  left: 0;
+}
+.right {
+  top: 1.5vh;
+  left: 85vw;
+}
+.bottom {
+  top: 92vh;
+}

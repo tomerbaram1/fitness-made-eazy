@@ -1,0 +1,110 @@
+@keyframes itemAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60vw;
+  }
+}
+a {
+  font-weight: bolder;
+}
+a.white {
+  text-decoration: none;
+
+  background: linear-gradient(to right, darkgrey, grey),
+    linear-gradient(to right, #ffffff, #ece9e6);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  color: black;
+}
+
+a.azurLane {
+  text-decoration: none;
+
+  background: linear-gradient(to right, white, white),
+    linear-gradient(to right, #91eae400, #86a8e700, #7f7fd500);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  color: white;
+}
+a.instagram {
+  text-decoration: none;
+
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4),
+    linear-gradient(to right, #fcb04500, #fd1d1d00, #833ab400);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  color: white;
+}
+a.skyWhite {
+  text-decoration: none;
+
+  background: linear-gradient(to left, grey, grey),
+    linear-gradient(to left, #cfdef3, #e0eafc);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  color: rgb(29, 28, 28);
+}
+a.netflix {
+  text-decoration: none;
+
+  background: linear-gradient(to left, white, white),
+    linear-gradient(to left, #cfdef300, #e0eafc00);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  color: rgb(171, 170, 170);
+}
+a.deepSpace {
+  text-decoration: none;
+
+  background: linear-gradient(
+      to left,
+      rgba(174, 133, 51, 0.5),
+      rgba(174, 133, 51, 0.5)
+    ),
+    linear-gradient(to left, #cfdef300, #e0eafc00);
+  background-size: 0 3px, 100% 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  color: orange;
+}
+a:hover {
+  background-size: 100% 3px, 0 3px;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: rgb(242, 163, 5);
+}
+
+.hamburgerItemContainer > .hamburgerItem {
+  font-size: 2em;
+  text-decoration: none;
+  padding: 1rem;
+  animation-name: itemAnimation;
+  animation-duration: 0.4s;
+}
+.hamburgerItemContainer {
+  width: 60vw;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  animation-name: itemAnimation;
+  animation-duration: 0.4s;
+  text-align: center;
+}
+.hamburgeritem:hover {
+  background-size: 0 3px, 100% 3px !important;
+}
