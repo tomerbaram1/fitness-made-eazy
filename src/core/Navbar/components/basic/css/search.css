@@ -1,0 +1,100 @@
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  height: 0.2vh;
+  width: 7vw;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  padding-right: 40px;
+  color: #fff;
+}
+.input-search::placeholder {
+  /* color: rgba(255, 255, 255, 0.5); */
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.input-search:focus {
+  width: 200px;
+  border-radius: 0px;
+  background-color: transparent;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.azurLane {
+  background-color: #f1f1f1;
+  color: black;
+}
+.azurLane:focus {
+  border-bottom: 1px solid lightgrey;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.azurLane::placeholder {
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+.white:focus {
+  border-bottom: 1px solid lightgrey;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.white::placeholder {
+  color: black;
+}
+
+.instagram {
+  background-color: #f1f1f1;
+  color: black;
+}
+.instagram:focus {
+  border-bottom: 1px solid lightgrey;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.instagram::placeholder {
+  color: black;
+}
+.skyWhite {
+  /* background-color: #f1f1f1; */
+  color: black;
+}
+.skyWhite:focus {
+  border-bottom: 1px solid lightgrey;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.skyWhite::placeholder {
+  color: black;
+}
+.netflix {
+  /* background-color: #f1f1f1; */
+  color: black;
+}
+.netflix:focus {
+  border-bottom: 1px solid lightgrey;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.netflix::placeholder {
+  color: black;
+}
+.deepSpace {
+  background-color: rgb(242, 163, 5);
+
+  color: black;
+}
+.deepSpace:focus {
+  border-bottom: 1px solid lightgrey;
+  background-color: rgba(174, 133, 51, 0.5);
+}
+.deepSpace::placeholder {
+  color: black;
+}
