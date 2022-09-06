@@ -42,6 +42,7 @@ const AccountInformation = () => {
         <AccountCircle />
       </IconButton>
       <Menu
+        sx={{ bgcolor: "background.secondary" }}
         id="menu-appbar"
         anchorEl={anchorEl}
         anchorOrigin={{
