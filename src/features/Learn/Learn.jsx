@@ -2,11 +2,8 @@ import React from "react";
 import "./learn.css";
 import Navbar from "../../core/Navbar/Navbar";
 import ActionAreaCard from "./LearnCard";
-import { useSelector, useDispatch } from "react-redux";
-import { change, reset } from "../../reducers/SelectedProgramSlice";
+
 const Learn = () => {
-  const selectedProgram = useSelector((state) => state.selectedProgram.value);
-  const dispatch = useDispatch();
   return (
     <div>
       <Navbar></Navbar>
@@ -53,7 +50,7 @@ const Learn = () => {
         </p>
       </div>
       <div className="card-container1">
-        <ActionAreaCard rani={"loremsadnaskdbahfbabababha"} />
+        <ActionAreaCard title={""} text={""} />
       </div>
     </div>
   );
