@@ -33,6 +33,29 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <div className="footer-img">
+        <img src="https://raw.githubusercontent.com/aniskchaou/GYM-FRONTEND-CLIENT/master/screenshots/logo.png" />
+        <h3>
+          Fitness made easy is a pro natrul bodybulding site, <br />
+          studided by experts and scientists all over the world.
+        </h3>
+        <div className="icon-section">
+          <br></br>
+          <a href="https://www.instagram.com/">
+            <InstagramIcon style={{ color: "white" }} />
+          </a>
+          <a href="https://www.facebook.com/">
+            <FacebookIcon style={{ color: "white" }} />
+          </a>
+          <a href="https://twitter.com/?lang=en">
+            {" "}
+            <TwitterIcon style={{ color: "white" }} />
+          </a>
+          <a href="https://www.youtube.com/">
+            <YouTubeIcon style={{ color: "white" }} />
+          </a>
+        </div>
+      </div>
       <div className="section1">
         <br></br>
         <br></br>

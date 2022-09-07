@@ -53,5 +53,29 @@
   padding: 4px;
   font-size: 30px;
 }
-.goDownIcon {
+@media only screen and (max-width: 768px) {
+  .container-text {
+    display: flex;
+    line-height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    position: absolute;
+    height: 100%;
+    top: 0;
+  }
+  .container-description {
+    color: #fff;
+  }
+  .colorText {
+    color: rgb(242, 163, 5);
+    font-size: 25px;
+  }
+  .container-header {
+    font-size: 20px;
+    color: white;
+  }
+
 }

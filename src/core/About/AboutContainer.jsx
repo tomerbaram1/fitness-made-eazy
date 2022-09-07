@@ -11,6 +11,7 @@ export default function AboutContainer() {
           knowledge is our <span className="orange">power</span>
         </h1>
         <br />
+
         <p className="text-upper">
           Through his science-based Youtube channel, with over 2 million
           subscribers, Jeff shares the knowledge he has gathered through
@@ -18,6 +19,8 @@ export default function AboutContainer() {
           passion for the science behind building muscle, losing fat, and
           gaining strength. Here are some of his accomplishments:
         </p>
+        <br />
+
         <br />
         <ul className="text-list">
           <li>Mr. Junior Canada for Natural Bodybuilding (2012)</li>

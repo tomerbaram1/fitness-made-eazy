@@ -25,5 +25,23 @@ li{
 li:nth-child(even) {
     color: rgb(242, 163, 5);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+}
+
+@media only screen and (max-width: 768px) {
+    .text{
+        height: 100%;
+        width: 100%;
+    }
+    .text-img{
+        background-image: url(https://jeffnippard.com/wp-content/uploads/2020/06/About-Jeff-Nippard.png);
+        background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
 }
