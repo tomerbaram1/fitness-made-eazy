@@ -1,0 +1,41 @@
+.MuiBox-root.css-3vc3sq {
+  background: #7d7d7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #7d7d7d,
+    #7d7d7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7d7d7d,
+    #7d7d7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.loginTitle {
+  color: rgb(242, 163, 5) !important;
+}
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after {
+  border-bottom: 2px solid rgb(242, 163, 5) !important;
+}
+.css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: rgb(242, 163, 5) !important;
+}
+.css-g9m4e0-MuiInputBase-root-MuiFilledInput-root:after {
+  border-bottom: 2px solid rgb(242, 163, 5) !important;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  margin-top: 5% !important;
+  background-color: rgb(242, 163, 5) !important;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: rgb(100, 68, 6) !important;
+  color: lightgrey !important;
+}
+.LoginOverlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.605);
+}

@@ -4,8 +4,8 @@ export const articaleState = createSlice({
   name: "articale",
   initialState: { value: "" },
   reducers: {
-    change: (state, payload) => {
-      state.value = payload.value;
+    change: (state, action) => {
+      state.value = action.payload;
     },
   },
 });

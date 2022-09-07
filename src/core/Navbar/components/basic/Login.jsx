@@ -1,23 +1,21 @@
 // import * as React from "react";
 import Backdrop from "@mui/material/Backdrop";
+import { useSelector, useDispatch } from "react-redux";
+import { open, close } from "../../../../reducers/OpenLoginSlice";
 // import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 // import TextField from "@mui/material/TextField";
-
+import "./css/login.css";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import Input from "@mui/material/Input";
 import FilledInput from "@mui/material/FilledInput";
-import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
-import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
@@ -38,9 +36,17 @@ const style = {
 };
 
 export default function TransitionsModal() {
+  const openLogin = useSelector((state) => state.openLogin.value);
+  const dispatch = useDispatch();
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = () => {
+    dispatch(open());
+    setShowOverlay(true);
+  };
+  const handleClose = () => {
+    dispatch(close());
+    setShowOverlay(false);
+  };
 
   const [values, setValues] = React.useState({
     amount: "",
@@ -64,14 +70,14 @@ export default function TransitionsModal() {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
-
+  const [showOverlay, setShowOverlay] = React.useState(false);
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <div className={showOverlay ? "LoginOverlay" : ""}></div>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        open={open}
+        open={openLogin}
         onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
@@ -79,10 +85,10 @@ export default function TransitionsModal() {
           timeout: 500,
         }}
       >
-        <Fade in={open}>
+        <Fade in={openLogin}>
           <Box sx={style}>
             <Typography id="transition-modal-title" variant="h6" component="h2">
-              <h1>Login</h1>
+              {/* <h1 className="loginTitle">login</h1> */}
             </Typography>
             <FormControl sx={{ m: 1, width: "25ch" }} variant="filled">
               <InputLabel htmlFor="filled-adornment-email">Email</InputLabel>
@@ -91,22 +97,6 @@ export default function TransitionsModal() {
                 type="email"
                 value={values.email}
                 onChange={handleChange("email")}
-                // endAdornment={
-                //   <InputAdornment position="end">
-                //     <IconButton
-                //       aria-label="toggle password visibility"
-                //       onClick={handleClickShowPassword}
-                //       onMouseDown={handleMouseDownPassword}
-                //       edge="end"
-                //     >
-                //       {values.showPassword ? (
-                //         <VisibilityOff />
-                //       ) : (
-                //         <Visibility />
-                //       )}
-                //     </IconButton>
-                //   </InputAdornment>
-                // }
               />
             </FormControl>
             <FormControl sx={{ m: 1, width: "25ch" }} variant="filled">
@@ -132,6 +122,7 @@ export default function TransitionsModal() {
                 }
               />
             </FormControl>
+            <Button variant="contained">LOGIN</Button>
           </Box>
         </Fade>
       </Modal>
