@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
 .navBarContainer {
   display: flex;
   justify-content: space-between;

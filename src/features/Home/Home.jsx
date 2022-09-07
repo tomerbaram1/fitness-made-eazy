@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <CssBaseline />
-      <Navbar></Navbar>
+      <Navbar haveAbout={true}></Navbar>
       <Main></Main>
       <About></About>
       <Articales></Articales>

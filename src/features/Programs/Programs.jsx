@@ -18,7 +18,7 @@ export const Programs = (props) => {
 
   return (
     <div className="programs-container">
-      <Navbar className="programs-nav" />
+      <Navbar className="programs-nav" haveAbout={false} />
       <br /> <br /> <br /> <br /> <br />
       <div className="programs">
         <Program
