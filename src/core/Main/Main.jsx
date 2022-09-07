@@ -6,7 +6,7 @@ import videoBg from "../Main/fitnessVideo.mp4";
 const Main = () => {
   return (
     <section className="main-container">
-      <div className="overlay"></div>
+      <div className="mainOverlay"></div>
       <video src={videoBg} autoPlay loop muted />
       <MainContainer />
     </section>

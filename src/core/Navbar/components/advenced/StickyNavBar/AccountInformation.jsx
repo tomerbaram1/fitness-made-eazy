@@ -62,7 +62,7 @@ const AccountInformation = () => {
   }, [state]);
 
   return (
-    <div>
+    <div className="accountInformationContainer">
       <IconButton
         size="large"
         aria-label="account of current user"

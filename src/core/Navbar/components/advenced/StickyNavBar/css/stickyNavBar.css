@@ -8,7 +8,7 @@ html {
   align-items: center;
   width: 100vw;
   height: 10vh;
-  padding-left: 2vw;
+  /* padding-left: 2vw; */
   padding-right: 2vw;
   position: fixed;
   z-index: 99;

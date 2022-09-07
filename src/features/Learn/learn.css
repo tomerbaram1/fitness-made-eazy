@@ -1,444 +1,409 @@
 .learn-container-background-1 {
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/29/23/57/man-1871631_960_720.jpg");
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/29/23/57/man-1871631_960_720.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .learn-container-background-2 {
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/10/23/34/street-workout-2628904_960_720.jpg");
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/10/23/34/street-workout-2628904_960_720.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .learn-container-background-3 {
-    background-image: url("https://cdn.pixabay.com/photo/2017/01/12/21/14/sports-1975689_960_720.png");
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/12/21/14/sports-1975689_960_720.png");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .learn-container-background-4 {
-    background-image: url("https://cdn.pixabay.com/photo/2018/07/04/14/17/gym-3516208_960_720.jpg");
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+  background-image: url("https://cdn.pixabay.com/photo/2018/07/04/14/17/gym-3516208_960_720.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .learn-container-background-5 {
-    background-image: url("https://cdn.pixabay.com/photo/2021/11/24/10/14/muscles-6820781_960_720.jpg");
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+  background-image: url("https://cdn.pixabay.com/photo/2021/11/24/10/14/muscles-6820781_960_720.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .learn-container-background-6 {
-    background-image: url("https://cdn.pixabay.com/photo/2017/05/25/15/08/jogging-2343558_960_720.jpg");
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/05/25/15/08/jogging-2343558_960_720.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .learn-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-top: 30vh; */
+  padding-top: 30vh;
 }
 
 .button-header {
-    color: white;
-    font-size: xx-large;
+  color: white;
+  font-size: xx-large;
 }
 
-
 .overlay {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #dd1818aa, #33333336);
-    background: linear-gradient(to right, #dd18185b, #3333331b);
-    height: 100vh;
-
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #dd1818aa, #33333336);
+  background: linear-gradient(to right, #dd18185b, #3333331b);
+  height: 100vh;
 }
 
 .overlay2 {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #18dd3fc5, #33333336);
-    background: linear-gradient(to right, #d7dd1872, #3333331b);
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #18dd3fc5, #33333336);
+  background: linear-gradient(to right, #d7dd1872, #3333331b);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .overlay3 {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #185add25, #11117584);
-    background: linear-gradient(to right, #e9e50b1d, #8f951984);
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #185add25, #11117584);
+  background: linear-gradient(to right, #e9e50b1d, #8f951984);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .overlay4 {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #cd18ddaa, #33333383);
-    background: linear-gradient(to right, #9b0c831b, #8e0f85b4);
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #cd18ddaa, #33333383);
+  background: linear-gradient(to right, #9b0c831b, #8e0f85b4);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .overlay5 {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #dd1818aa, #33333336);
-    background: linear-gradient(to right, #dd18185b, #3333331b);
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #dd1818aa, #33333336);
+  background: linear-gradient(to right, #dd18185b, #3333331b);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .overlay6 {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #dd6718aa, #33333336);
-    background: linear-gradient(to right, #dd64185b, #3333331b);
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #dd6718aa, #33333336);
+  background: linear-gradient(to right, #dd64185b, #3333331b);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .learn-img-container-1 {
-    background-image: url("https://cdn.pixabay.com/photo/2017/09/27/18/52/gym-2793007_960_720.jpg");
-    height: 50vh;
-    width: 20vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-    border: solid 5px #6b2e2e63;
-
-
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/27/18/52/gym-2793007_960_720.jpg");
+  height: 50vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
+  border: solid 5px #6b2e2e63;
 }
 
 .learn-img-container-1 {
-    background-image: url("https://cdn.pixabay.com/photo/2017/09/27/18/52/gym-2793007_960_720.jpg");
-    height: 50vh;
-    width: 20vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-
-
-
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/27/18/52/gym-2793007_960_720.jpg");
+  height: 50vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
 }
 
 .learn-img-container-2 {
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/10/23/35/street-workout-2628910_960_720.jpg");
-    height: 50vh;
-    width: 20vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-
-
-
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/10/23/35/street-workout-2628910_960_720.jpg");
+  height: 50vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
 }
 
 .learn-img-container-3 {
-    background-image: url("https://cdn.pixabay.com/photo/2018/03/26/17/10/bodybuilder-3263274_960_720.jpg");
-    height: 50vh;
-    width: 20vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-
-
-
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/26/17/10/bodybuilder-3263274_960_720.jpg");
+  height: 50vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
 }
 
 .learn-img-container-4 {
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/01/03/24/fit-2562964_960_720.jpg");
-    height: 50vh;
-    width: 20vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-
-
-
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/01/03/24/fit-2562964_960_720.jpg");
+  height: 50vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
 }
 
 .learn-img-container-5 {
-    background-image: url("https://cdn.pixabay.com/photo/2020/03/29/19/40/man-4982014_960_720.jpg");
-    height: 50vh;
-    width: 20vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-
-
-
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/29/19/40/man-4982014_960_720.jpg");
+  height: 50vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
 }
 
 .learn-img-container-6 {
-    background-image: url("https://cdn.pixabay.com/photo/2015/07/02/10/26/training-828760_960_720.jpg");
-    height: 50vh;
-    width: 20vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-
-
-
+  background-image: url("https://cdn.pixabay.com/photo/2015/07/02/10/26/training-828760_960_720.jpg");
+  height: 50vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
 }
 
 .img-overlay-1 {
-    background: #333333ad;
-    background: -webkit-linear-gradient(to right, #dd181849, #33333332);
-    background: linear-gradient(to right, #dd18185f, #33333356);
-    height: 50vh;
-    width: 20vw;
-    position: absolute;
+  background: #333333ad;
+  background: -webkit-linear-gradient(to right, #dd181849, #33333332);
+  background: linear-gradient(to right, #dd18185f, #33333356);
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
 }
 
 .img-overlay-2 {
-    background: #cac5312f;
-    background: -webkit-linear-gradient(to left, #f3f9a765, #cac5311e);
-    background: linear-gradient(to left, #a7f9ae6e, #31ca343f);
+  background: #cac5312f;
+  background: -webkit-linear-gradient(to left, #f3f9a765, #cac5311e);
+  background: linear-gradient(to left, #a7f9ae6e, #31ca343f);
 
-    height: 50vh;
-    width: 20vw;
-    position: absolute;
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
 }
 
 .img-overlay-3 {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #185addaa, #33333336);
-    background: linear-gradient(to right, #e9e60b6e, #3333331b);
-    height: 50vh;
-    width: 20vw;
-    position: absolute;
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #185addaa, #33333336);
+  background: linear-gradient(to right, #e9e60b6e, #3333331b);
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
 }
 
 .img-overlay-4 {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #cd18dd20, #bd169c83);
-    background: linear-gradient(to right, #2c817812, #981a9670);
-    height: 50vh;
-    width: 20vw;
-    position: absolute;
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #cd18dd20, #bd169c83);
+  background: linear-gradient(to right, #2c817812, #981a9670);
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
 }
 
 .img-overlay-5 {
-    background: #333333ad;
-    background: -webkit-linear-gradient(to right, #dd181849, #33333332);
-    background: linear-gradient(to right, #dd18185f, #33333356);
-    height: 50vh;
-    width: 20vw;
-    position: absolute;
+  background: #333333ad;
+  background: -webkit-linear-gradient(to right, #dd181849, #33333332);
+  background: linear-gradient(to right, #dd18185f, #33333356);
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
 }
 
 .img-overlay-6 {
-    background: #3333334f;
-    background: -webkit-linear-gradient(to right, #dd6718aa, #c08e1843);
-    background: linear-gradient(to right, #dd64185b, #c1931e33);
-    height: 50vh;
-    width: 20vw;
-    position: absolute;
+  background: #3333334f;
+  background: -webkit-linear-gradient(to right, #dd6718aa, #c08e1843);
+  background: linear-gradient(to right, #dd64185b, #c1931e33);
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
 }
 
 .paragraph-section {
-    background-color: steelblue;
-    color: black;
+  background-color: steelblue;
+  color: black;
 }
 
-
-
 .button-42 {
-    background-color: initial;
-    background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
-    color: #FFFFFF;
-    display: inline-block;
-    height: 10vh;
-    width: 30vw;
-    transition-duration: 2000ms;
-    font-size: x-large;
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  display: inline-block;
+  height: 10vh;
+  width: 30vw;
+  transition-duration: 2000ms;
+  font-size: x-large;
 }
 
 .button-42:hover {
-    box-shadow: rgba(14, 9, 7, 0.5) 5 3px 8px;
-    background-color: #060404;
-    color: #080807;
-    font-size: xx-large;
-    border-radius: 80px;
+  box-shadow: rgba(14, 9, 7, 0.5) 5 3px 8px;
+  background-color: #060404;
+  color: #080807;
+  font-size: xx-large;
+  border-radius: 80px;
 }
 
-
 .section2-container {
-    font-size: large;
-    background-color: rgb(29 28 28);
-    color: white;
-    padding: 80px;
+  font-size: large;
+  background-color: rgb(29 28 28);
+  color: white;
+  padding: 80px;
 }
 
 .card-container1 {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    background-color: black;
-    height: 400px;
-    color: rgba(111, 33, 33, 0.422)
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: black;
+  height: 400px;
+  color: rgba(111, 33, 33, 0.422);
 }
 
-
-
-
-
-.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
-    width: 100%;
-    background-color: #c5cbd95e;
+.card-container1 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+  width: 100%;
+  background-color: #c5cbd95e;
 }
 
 .cardTitle {
-    color: orange;
+  color: orange;
 }
 
 .cardText {
-    color: white;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
-    .learn-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30vh;
-        align-items: center;
-        margin: 10vh;
-    }
-}
-
-
-
-@media only screen and (max-width: 560px) {
-    .learn-img-container-1 {
-        width: 50vw;
-    }
+  .learn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    align-items: center;
+    margin: 10vh;
+  }
 }
 
 @media only screen and (max-width: 560px) {
-    .learn-img-container-2 {
-        width: 50vw;
-    }
+  .learn-img-container-1 {
+    width: 50vw;
+  }
 }
 
 @media only screen and (max-width: 560px) {
-    .learn-img-container-3 {
-        width: 50vw;
-    }
+  .learn-img-container-2 {
+    width: 50vw;
+  }
 }
 
 @media only screen and (max-width: 560px) {
-    .learn-img-container-4 {
-        width: 50vw;
-    }
+  .learn-img-container-3 {
+    width: 50vw;
+  }
 }
 
 @media only screen and (max-width: 560px) {
-    .learn-img-container-5 {
-        width: 50vw;
-    }
+  .learn-img-container-4 {
+    width: 50vw;
+  }
 }
 
-
-@media only screen and (max-width: 768px) {
-    .learn-img-container-6 {
-
-        width: 50vw;
-    }
-}
-
-
-
-@media only screen and (max-width: 768px) {
-
-    .img-overlay {
-        display: none;
-    }
+@media only screen and (max-width: 560px) {
+  .learn-img-container-5 {
+    width: 50vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .button-header {
-        font-size: small;
-    }
+  .learn-img-container-6 {
+    width: 50vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
-        display: none;
-    }
+  .img-overlay {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button-header {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container1.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+    display: none;
+  }
 }

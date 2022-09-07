@@ -1,47 +1,45 @@
-*{
-    margin: 0;
-
- 
+* {
+  margin: 0;
 }
- .main-container{
-    width: 100%;
-    height: 100vh;
-border-top: rgb(242, 163, 5) 2px solid;
-border-bottom: rgb(242, 163, 5) 6px solid !important ;
-
+.main-container {
+  width: 100%;
+  height: 100vh;
+  border-top: rgb(242, 163, 5) 2px solid;
+  border-bottom: rgb(242, 163, 5) 6px solid !important ;
 }
 @media only screen and (max-width: 768px) {
-    .main-container{
-        width: 100%;
-        height: 80vh;
+  .main-container {
+    width: 100%;
+    height: 80vh;
     border-top: rgb(242, 163, 5) 2px solid;
     border-bottom: rgb(242, 163, 5) 6px solid !important ;
-    }
-    .overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 70%;
-        width: 100%;
-    background-color:rgba(0,0,0,.4);}}
-    @media only screen and (max-width: 768px) {
-    video{
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-}}
-video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.overlay{
+  }
+  .mainOverlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 70%;
     width: 100%;
-background-color:rgba(0,0,0,.4);
-
-
-} 
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+@media only screen and (max-width: 768px) {
+  video {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
