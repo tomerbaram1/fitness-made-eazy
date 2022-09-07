@@ -26,6 +26,11 @@
   margin-right: 10px !important;
   background: rgb(242, 163, 5) !important;
   height: 7vh;
+  font-family: "Nunito", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 1000 !important;
+
+  
 }
 .btn:hover {
   background: rgb(196, 113, 19);
@@ -40,13 +45,13 @@
 }
 .colorText {
   color: rgb(242, 163, 5);
-  font-size: x-large;
+  font-size: xx-large;
 }
 .siteNameText {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5%;
   padding: 4px;
-  font-size: 15px;
+  font-size: 30px;
 }
 .goDownIcon {
 }

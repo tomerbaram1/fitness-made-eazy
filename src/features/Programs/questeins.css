@@ -1,0 +1,22 @@
+.mySwiper{
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/20/20/29/active-948798_1280.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    overflow: hidden;
+box-shadow: 0 2px 20px rgba(28, 27, 27, 0.958);
+transition: transform 3000ms ease-in;
+height: 20vh;
+width: 100%;
+display: flex;
+
+}
+.swiperTitle{
+    color: orange;
+}
+.swiperText{
+color: white;
+
+}
+.orange{
+    color: orange;
+}

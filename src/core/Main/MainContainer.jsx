@@ -8,12 +8,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Collapse, IconButton } from "@mui/material";
 import { useEffect } from "react";
 import { useState } from "react";
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 export default function MainContainer() {
   const [checked, setChecked] = useState(false);
   useEffect(() => {
     setChecked(true);
   }, []);
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -27,11 +29,11 @@ export default function MainContainer() {
           >
             <h1 className="container-header">
               Welcome to <br />
-              Our<span className="orange">GYM</span>
+              <span className="siteNameText">
+                Fitness<span className="colorText">made</span>Eazy
+              </span>
             </h1>
-            <span className="siteNameText">
-              Fitness<span className="colorText">made</span>Eazy
-            </span>
+
             <h2>READY TO TRAIN LIKE A PRO?</h2>
             <h4 className="container-description">
               USING OUR FITNESS APP, YOU WILL LEARN WHATS THE{" "}
@@ -40,7 +42,9 @@ export default function MainContainer() {
             </h4>
           </Collapse>
           <div className="buttons">
-            <MainButton name="Our Ready-Workouts"></MainButton>
+            <Link to="programs">
+              <MainButton name="Our Ready-Workouts"></MainButton>
+            </Link>
             <MainButton
               className="btn2"
               name="Create a Workout plan"
