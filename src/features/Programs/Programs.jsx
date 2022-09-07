@@ -44,7 +44,7 @@ export const Programs = (props) => {
           img="https://cdn.pixabay.com/photo/2015/07/02/10/21/training-828715_1280.jpg"
           price="100$"
           handleClick={() =>
-            handleClick("FundementaWomen's Specialization Programls")
+            handleClick("Women's Specialization Program")
           }
         />
         <Program
