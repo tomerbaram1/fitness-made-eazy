@@ -10,7 +10,7 @@ import { Pagination } from "swiper";
 
 export default function Questeins() {
   return (
-    <>
+    <div className="questein-swiper">
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         <SwiperSlide>
           <h1 className="swiperTitle">
@@ -108,6 +108,6 @@ export default function Questeins() {
           <span className="orange">GO FOR ITT</span>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

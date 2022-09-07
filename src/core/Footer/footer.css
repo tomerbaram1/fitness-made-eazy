@@ -9,10 +9,26 @@
 .footer-headers {
   color: orange;
 }
+.footer-img{
+  display: none;
+}
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) {
   .footer-container {
     display: flex;
     flex-direction: column;
+    font-size: larger;
   }
+.section1{
+  display: none;
+}
+.footer-img{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+  background: linear-gradient(to right, #434343, #000000);
+  color: white;
+  padding: 3vw;
+  position: relative;
+}
 }

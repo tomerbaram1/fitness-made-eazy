@@ -317,8 +317,6 @@
 
 
 
-
-
 .button-42 {
     background-color: initial;
     background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
@@ -353,8 +351,11 @@
     justify-content: center;
     padding: 40px;
     background-color: black;
-
+    height: 400px;
+    color: rgba(111, 33, 33, 0.422)
 }
+
+
 
 
 
@@ -371,7 +372,7 @@
     color: white;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) {
     .learn-container {
         display: flex;
         flex-direction: column;
@@ -413,20 +414,24 @@
     }
 }
 
-@media only screen and (max-width: 560px) {
+
+@media only screen and (max-width: 768px) {
     .learn-img-container-6 {
+
         width: 50vw;
     }
 }
 
 
-@media only screen and (max-width: 560px) {
+
+@media only screen and (max-width: 768px) {
+
     .img-overlay {
         display: none;
     }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) {
     .button-header {
         font-size: small;
     }

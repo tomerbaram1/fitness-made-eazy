@@ -43,3 +43,41 @@
   width: 50%;
   height: 50vh;
 }
+@media only screen and (max-width: 768px) {
+  .about {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: rgba(171, 171, 171, 0.503);
+  }}
+  @media only screen and (max-width: 768px) {
+  .about-pictures {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-pic1 {
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/23/training-828741_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50vh;
+    display: none;
+  }
+  
+  .about-pic2 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutOverlay {
+    height: 0;
+    border-radius: 2%;
+  }
+}
