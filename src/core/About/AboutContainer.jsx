@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AboutContainer() {
   return (
-    <div className="container">
+    <div id="aboutPage" className="container">
       <div className="text-img"></div>
       <div className="text">
         <h1 className="text-header">

@@ -1,0 +1,25 @@
+.cartItemContainer {
+  width: 30vw;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 5%; */
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 2.5vw;
+  margin-left: 2.5vw;
+}
+.cartItem.cartItemPrice {
+  width: 25%;
+  color: orange;
+}
+.cartItem.cartItemTitle {
+  width: 50%;
+}
+.cartItem.cartItemImage {
+  width: 15%;
+}
+.cartItemBorder {
+  width: 30vw;
+  margin-left: 2.5vw;
+}
