@@ -7,37 +7,17 @@ import { CardActionArea } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function ActionAreaCard(props) {
-  switch (props) {
-    case "Power Lifting":
-      props.title = "Power Lifting";
-      props.text = "sdgsgf";
 
-      break;
-    case "Calisthenics":
-      props.title = "Calisthenics";
-      props.text = "ffgdfgfgfg";
-      break;
-    case "Fundementals":
-      break;
-    case "Women's Specialization Program":
-      break;
-    case "Full Body Workout":
-      break;
-    case "Lower Body Workout":
-      break;
-
-    default:
-      break;
-  }
   return (
     <Card style={{ height: 400 }} sx={{ maxWidth: 700 }}>
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {props.title}
+            <h1 className="cardTitle">{props.title}</h1>
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {props.text}
+            <h3 className="cardText">{props.text}</h3> <br />
+            <h5 className="cardText">{props.text2}</h5>
           </Typography>
         </CardContent>
       </CardActionArea>
