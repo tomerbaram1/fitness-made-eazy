@@ -1,10 +1,6 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { change, reset } from "../../reducers/SelectedProgramSlice";
 
 export const Program = (props) => {
-  const selectedProgram = useSelector((state) => state.selectedProgram.value);
-  const dispatch = useDispatch();
   return (
     <div className="program-card">
       <div className="card-body">
