@@ -1,14 +1,17 @@
 // import * as React from "react";
 import Backdrop from "@mui/material/Backdrop";
 import { useSelector, useDispatch } from "react-redux";
-import { open, close } from "../../../../reducers/OpenLoginSlice";
+import {
+  openRegisterFunction,
+  closeRegisterFunction,
+} from "../../../../reducers/OpenRegisterSlice";
 // import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 // import TextField from "@mui/material/TextField";
-import "./css/login.css";
+import "./css/register.css";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
@@ -37,21 +40,24 @@ const style = {
 };
 
 export default function TransitionsModal() {
-  const openLogin = useSelector((state) => state.openLogin.value);
+  const openRegister = useSelector((state) => state.openRegister.value);
   const dispatch = useDispatch();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
-    dispatch(open());
+    dispatch(openRegisterFunction());
     setShowOverlay(true);
   };
   const handleClose = () => {
-    dispatch(close());
+    dispatch(closeRegisterFunction());
     setShowOverlay(false);
   };
 
   const [localValues, setlocalValues] = React.useState({
+    firstName: "",
+    lastName: "",
     email: "",
     password: "",
+    repeatPassword: "",
     showPassword: false,
   });
 
@@ -72,11 +78,25 @@ export default function TransitionsModal() {
   const [showOverlay, setShowOverlay] = React.useState(false);
   return (
     <div>
-      <div className={showOverlay ? "LoginOverlay" : ""}></div>
+      <div className={showOverlay ? "RegisterOverlay" : ""}></div>
       <Formik
         initialValues={{ email: "", password: "" }}
         validate={(values) => {
           const errors = {};
+          if (!values.firstName) {
+            errors.firstName = "Required";
+          } else if (!/(?=.*[a-zA-Z])/i.test(values.firstName)) {
+            errors.firstName = "Invalid first name ";
+          } else if (values.firstName.length < 2) {
+            errors.firstName = "Invalid first name ";
+          }
+          if (!values.lastName) {
+            errors.lastName = "Required";
+          } else if (!/(?=.*[a-zA-Z])/i.test(values.lastName)) {
+            errors.lastName = "Invalid last name ";
+          } else if (values.lastName.length < 2) {
+            errors.lastName = "Invalid last name ";
+          }
           if (!values.email) {
             errors.email = "Required";
           } else if (
@@ -88,6 +108,11 @@ export default function TransitionsModal() {
             errors.password = "Required";
           } else if (values.password.length < 6) {
             errors.password = "password to short";
+          }
+          if (!values.repeatPassword) {
+            errors.repeatPassword = "Required";
+          } else if (values.repeatPassword !== values.password) {
+            errors.repeatPassword = "passwords do not match";
           }
           return errors;
         }}
@@ -111,7 +136,7 @@ export default function TransitionsModal() {
           <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
-            open={openLogin}
+            open={openRegister}
             onClose={handleClose}
             closeAfterTransition
             BackdropComponent={Backdrop}
@@ -120,13 +145,47 @@ export default function TransitionsModal() {
             }}
           >
             <form onSubmit={handleSubmit}>
-              <Fade in={openLogin}>
+              <Fade in={openRegister}>
                 <Box sx={style}>
                   <Typography
                     id="transition-modal-title"
                     variant="h6"
                     component="h2"
                   ></Typography>
+                  <FormControl sx={{ m: 1, width: "25ch" }} variant="filled">
+                    <InputLabel htmlFor="filled-adornment-firstName">
+                      First Name
+                    </InputLabel>
+                    <FilledInput
+                      id="filled-adornment-firstName"
+                      type="text"
+                      name="firstName"
+                      value={values.firstName}
+                      onChange={handleChange("firstName")}
+                      onBlur={handleBlur}
+                    />
+                    <p style={{ color: "darkred" }}>
+                      {errors.firstName &&
+                        touched.firstName &&
+                        errors.firstName}
+                    </p>
+                  </FormControl>
+                  <FormControl sx={{ m: 1, width: "25ch" }} variant="filled">
+                    <InputLabel htmlFor="filled-adornment-lastName">
+                      Last Name
+                    </InputLabel>
+                    <FilledInput
+                      id="filled-adornment-lastName"
+                      type="text"
+                      name="lastName"
+                      value={values.lastName}
+                      onChange={handleChange("lastName")}
+                      onBlur={handleBlur}
+                    />
+                    <p style={{ color: "darkred" }}>
+                      {errors.lastName && touched.lastName && errors.lastName}
+                    </p>
+                  </FormControl>
                   <FormControl sx={{ m: 1, width: "25ch" }} variant="filled">
                     <InputLabel htmlFor="filled-adornment-email">
                       Email
@@ -175,12 +234,46 @@ export default function TransitionsModal() {
                       {errors.password && touched.password && errors.password}
                     </p>
                   </FormControl>
+                  <FormControl sx={{ m: 1, width: "25ch" }} variant="filled">
+                    <InputLabel htmlFor="filled-adornment-repeatPassword">
+                      Repeat Password
+                    </InputLabel>
+                    <FilledInput
+                      id="filled-adornment-repeatPassword"
+                      name="repeatPassword"
+                      type={localValues.showPassword ? "text" : "password"}
+                      value={values.repeatPassword}
+                      onChange={handleChange("repeatPassword")}
+                      onBlur={handleBlur}
+                      endAdornment={
+                        <InputAdornment position="end">
+                          <IconButton
+                            aria-label="toggle password visibility"
+                            onClick={handleClickShowPassword}
+                            onMouseDown={handleMouseDownPassword}
+                            edge="end"
+                          >
+                            {localValues.showPassword ? (
+                              <VisibilityOff />
+                            ) : (
+                              <Visibility />
+                            )}
+                          </IconButton>
+                        </InputAdornment>
+                      }
+                    />
+                    <p style={{ color: "darkred" }}>
+                      {errors.repeatPassword &&
+                        touched.repeatPassword &&
+                        errors.repeatPassword}
+                    </p>
+                  </FormControl>
                   <Button
                     type="submit"
                     variant="contained"
                     disabled={isSubmitting}
                   >
-                    LOGIN
+                    REGISTER
                   </Button>
                 </Box>
               </Fade>

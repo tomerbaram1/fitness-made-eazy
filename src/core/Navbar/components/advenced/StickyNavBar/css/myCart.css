@@ -1,0 +1,44 @@
+.cartContainer {
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.cartItemsContainer {
+  height: 55vh;
+  width: 35vw;
+}
+.cartTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+.cartTitleIcon {
+  font-size: xxx-large !important;
+  text-align: center;
+}
+.cartTitleBorder {
+  width: 30vw;
+  margin-left: 2.5vw;
+}
+.buttonsContainer {
+  margin-left: 2.5vw;
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.buttonsContainer .css-1plxeyz-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: gray;
+}
+.buttonsContainer .css-1plxeyz-MuiButtonBase-root-MuiButton-root {
+  width: 30vw;
+}
+.buttonsContainer .css-sghohy-MuiButtonBase-root-MuiButton-root {
+  width: 30vw;
+  height: 30%;
+}
