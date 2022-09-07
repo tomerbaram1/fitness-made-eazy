@@ -3,6 +3,7 @@ import Home from "./features/Home/Home";
 import { Routes, Route } from "react-router-dom";
 import { Programs } from "./features/Programs/Programs";
 import Learn from "./features/Learn/Learn";
+import { useEffect } from "react";
 function App() {
   return (
     <div className="App">
