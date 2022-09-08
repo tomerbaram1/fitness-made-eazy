@@ -23,17 +23,18 @@
   height: 100%;
   /* background-color: rgba(255, 166, 0, 0.52); */
 
-  background: #fceabb; /* fallback for old browsers */
+  background: #f2a305b3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #f8b60085,
-    #fceabb85
+
+    #000000b3,
+    #f2a305b3
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
 
     #000000b3,
-    #e7a900b3
+    #f2a305b3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   z-index: 2;

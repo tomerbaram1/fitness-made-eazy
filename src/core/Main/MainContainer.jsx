@@ -25,7 +25,7 @@ export default function MainContainer() {
           <Collapse
             in={checked}
             {...(checked ? { timeout: 2000 } : {})}
-            collapsedHeight={50}
+            collapsedheight={50}
           >
             <h1 className="container-header">
               Welcome to <br />
