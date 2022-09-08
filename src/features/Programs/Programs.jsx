@@ -77,7 +77,7 @@ export const Programs = (props) => {
         <Program
           title="Crossfit"
           img="https://cdn.pixabay.com/photo/2020/11/10/15/08/crossfit-5730105_1280.jpg"
-          price="150$"
+          price="200$"
           handleClick={() => handleClick("Lower Body Workout")}
         />
       </div>
@@ -159,7 +159,7 @@ export const Programs = (props) => {
             <Program
               title="Crossfit"
               img="https://cdn.pixabay.com/photo/2020/11/10/15/08/crossfit-5730105_1280.jpg"
-              price="150$"
+              price="200$"
               handleClick={() => handleClick("Lower Body Workout")}
             />
           </SwiperSlide>
