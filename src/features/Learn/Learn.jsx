@@ -21,7 +21,7 @@ const Learn = () => {
       {selectedProgram === "Fundementals" ? <LearnTemplate background="3" img="3" overlay="overlay3" overlay2="3" title1="BACK" title2="TO" title3="BASICS"></LearnTemplate> : <div />}
       {selectedProgram === "Women's Specialization Program" ? <LearnTemplate background="4" img="4" overlay="overlay4" overlay2="4" title1="WOMEN" title2="SPECIAL" title3="ADION"></LearnTemplate> : <div />}
       {selectedProgram === "Full Body Workout" ? <LearnTemplate background="5" img="5" overlay="overlay5" overlay2="5" title1="NO PAIN" title2="NO" title3="GAIN"></LearnTemplate> : <div />}
-      {selectedProgram === "Lower Body Workout" ? <LearnTemplate background="6" img="6" overlay="overlay6" overlay2="6" title1="GET" title2="STRONGER" title3="CORE"></LearnTemplate> : <div />}
+      {selectedProgram === "Lower Body Workout" ? <LearnTemplate background="6" img="6" overlay="overlay6" overlay2="6" title1="GET" title2="STRONGER" title3="LEGS"></LearnTemplate> : <div />}
 
       <div className="card-container1">
 
