@@ -45,10 +45,12 @@ export default function MainContainer() {
             <Link to="programs">
               <MainButton name="Our Ready-Workouts"></MainButton>
             </Link>
-            <MainButton
-              className="btn2"
-              name="Create a Workout plan"
-            ></MainButton>
+            <Link to="genderquestion">
+              <MainButton
+                className="btn2"
+                name="Create a Workout plan"
+              ></MainButton>
+            </Link>
           </div>
           <IconButton>
             <ExpandMoreIcon
