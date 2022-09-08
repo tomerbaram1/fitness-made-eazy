@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background: linear-gradient(to right, white, #000000ad);
+  background: linear-gradient(to right, #a7a7a7, #000000e8);
 }
 .aboutOverlay {
   position: absolute;
@@ -20,8 +20,7 @@
   box-shadow: 0 2px 20px rgba(28, 27, 27, 0.958);
   transition: transform 300ms ease-in;
   border-radius: 2%;
-  border: 1px rgba(255, 166, 0, 0.192) solid;
-
+  /* border: 1px rgba(255, 166, 0, 0.192) solid; */
 }
 .about-pictures {
   width: 100%;
@@ -29,7 +28,7 @@
   display: flex;
 }
 .about-pic1 {
-  background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/23/training-828741_1280.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839087_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
@@ -49,8 +48,9 @@
     width: 100%;
     position: relative;
     background: rgba(171, 171, 171, 0.503);
-  }}
-  @media only screen and (max-width: 768px) {
+  }
+}
+@media only screen and (max-width: 768px) {
   .about-pictures {
     width: 100%;
     height: 30vh;
@@ -66,7 +66,7 @@
     height: 50vh;
     display: none;
   }
-  
+
   .about-pic2 {
     background-image: url(https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_1280.jpg);
     background-size: cover;
