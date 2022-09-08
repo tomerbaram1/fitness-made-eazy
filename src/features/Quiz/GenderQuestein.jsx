@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 function GenderQuestein() {
-    return (
-        <div>GenderQuestein</div>
-    )
+  return (
+    <div className="gender-questein">
+      <h1>What is your Gender?</h1>
+      <button>MALE</button>
+      <button>FEMALE</button>
+    </div>
+  );
 }
 
-export default GenderQuestein
+export default GenderQuestein;
