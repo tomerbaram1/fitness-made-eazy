@@ -6,11 +6,11 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function QuestionThree(props) {
   return (
-  
+
     <div>
       <QuizTemplate
         title="Training History"
-        question={[
+        questions={[
           { text: "No History (never trained beofore)" },
           { text: "Minimal" },
           { text: "Average training" },
@@ -18,7 +18,7 @@ function QuestionThree(props) {
           { text: "Very active" },
         ]}
       />
-       <Link to={"/questionFour"}><QuizButton /></Link>
+      <Link to={"/questionFour"}><QuizButton /></Link>
     </div>
   );
 

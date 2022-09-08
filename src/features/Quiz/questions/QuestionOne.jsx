@@ -4,12 +4,12 @@ import QuizTemplate from "../QuizTemplate";
 import QuizButton from '../QuizButton'
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
-function QuestionOne(props) {
+function QuestionOne() {
   return (
     <div>
       <QuizTemplate
         title="How old are you?"
-        question={[
+        questions={[
           { text: "0-20" },
           { text: "20-30" },
           { text: "30-40" },
@@ -18,7 +18,7 @@ function QuestionOne(props) {
           { text: "60+" },
         ]}
       />
-          <Link to={"/questionTwo"}><QuizButton /></Link>
+      <Link to={"/questionTwo"}><QuizButton /></Link>
     </div>
   );
 
