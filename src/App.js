@@ -14,7 +14,6 @@ function App() {
         <Route path="/Learn" element={<Learn></Learn>}></Route>
         <Route></Route>
       </Routes>
-      <AboutImage></AboutImage>
     </div>
   );
 }
