@@ -12,6 +12,7 @@ import Login from "../../../components/basic/Login";
 import Register from "../../../components/basic/Register";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
+import PaymentMethod from "../../../components/basic/PaymentMethod";
 
 import { useSelector, useDispatch } from "react-redux";
 import { open, close } from "../../../../../reducers/OpenLoginSlice";
@@ -24,12 +25,13 @@ import {
   closeMyCartFunction,
 } from "../../../../../reducers/OpenMyCartSlice";
 import MyCart from "./MyCart";
+import { openPay, closePay } from "../../../../../reducers/OpenPaymentSlice";
 
 const AccountInformation = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [openLogin, setOpenLogin] = React.useState(true);
   const [openRegister, setOpenRegister] = React.useState(true);
-
+  const [openPayment, setOpenPayment] = React.useState(true);
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -117,7 +119,10 @@ const AccountInformation = () => {
           <ShoppingCartIcon></ShoppingCartIcon>My Cart
         </MenuItem>
         <hr></hr>
-        <MenuItem onClick={handleClose} sx={{ fontWeight: 600 }}>
+        <MenuItem
+          onClick={() => (dispatch(openPay()), handleClose)}
+          sx={{ fontWeight: 600 }}
+        >
           <AddCardIcon></AddCardIcon>Payment Method
         </MenuItem>
       </Menu>
@@ -126,6 +131,10 @@ const AccountInformation = () => {
         openRegister={openRegister}
         setOpenRegister={setOpenRegister}
       ></Register>
+      <PaymentMethod
+        openPayment={openPayment}
+        setOpenPayment={setOpenPayment}
+      ></PaymentMethod>
       <div>
         <React.Fragment>
           <Drawer

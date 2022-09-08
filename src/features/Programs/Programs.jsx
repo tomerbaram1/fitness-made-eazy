@@ -23,21 +23,19 @@ export const Programs = (props) => {
 
   return (
     <div className="programs-container">
-
       <Navbar className="programs-nav" haveAbout={false} />
-      <br /> <br /> <br /> 
-
+      <br /> <br /> <br />
       <div className="programs">
         <Program
           title="Power Lifting"
           img="https://cdn.pixabay.com/photo/2016/03/27/07/08/man-1282232_1280.jpg"
-          price="200$"
+          price="250$"
           handleClick={() => handleClick("Power Lifting")}
         />
         <Program
           title="Calisthenics"
           img="https://cdn.pixabay.com/photo/2018/04/04/16/44/kettlebell-3290296_1280.jpg"
-          price="100$"
+          price="150$"
           handleClick={() => handleClick("Calisthenics")}
         />
         <Program
@@ -50,20 +48,36 @@ export const Programs = (props) => {
           title="Women's Specialization Program"
           img="https://cdn.pixabay.com/photo/2015/07/02/10/21/training-828715_1280.jpg"
           price="100$"
-          handleClick={() =>
-            handleClick("Women's Specialization Program")
-          }
+          handleClick={() => handleClick("Women's Specialization Program")}
         />
         <Program
           title="Full Body Workout"
           img="https://cdn.pixabay.com/photo/2017/09/27/18/49/sport-2792995_1280.jpg"
-          price="200$"
+          price="300$"
           handleClick={() => handleClick("Full Body Workout")}
         />
         <Program
           title="Lower Body Workout"
           img="https://cdn.pixabay.com/photo/2017/04/20/08/35/sport-2245029_1280.jpg"
           price="200$"
+          handleClick={() => handleClick("Lower Body Workout")}
+        />
+        <Program
+          title="Upper Body Workout"
+          img="https://cdn.pixabay.com/photo/2018/12/28/16/16/exercise-3899877_1280.jpg"
+          price="200$"
+          handleClick={() => handleClick("Lower Body Workout")}
+        />
+        <Program
+          title="Core"
+          img="https://cdn.pixabay.com/photo/2016/04/13/17/00/plank-1327256_1280.jpg"
+          price="100$"
+          handleClick={() => handleClick("Lower Body Workout")}
+        />
+        <Program
+          title="Crossfit"
+          img="https://cdn.pixabay.com/photo/2020/11/10/15/08/crossfit-5730105_1280.jpg"
+          price="150$"
           handleClick={() => handleClick("Lower Body Workout")}
         />
       </div>
