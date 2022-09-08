@@ -3,6 +3,7 @@ import OpenLoginSlice from "../reducers/OpenLoginSlice";
 import OpenPaymentSlice from "../reducers/OpenLoginSlice";
 import OpenMyCartSlice from "../reducers/OpenMyCartSlice";
 import OpenRegisterSlice from "../reducers/OpenRegisterSlice";
+import QuizGradeSlice from "../reducers/QuizGradeSlice";
 
 import SelectedProgramSlice from "../reducers/SelectedProgramSlice";
 
@@ -13,5 +14,6 @@ export const store = configureStore({
     openRegister: OpenRegisterSlice,
     openMyCart: OpenMyCartSlice,
     selectedProgram: SelectedProgramSlice,
+    quizGrade: QuizGradeSlice,
   },
 });
