@@ -1,5 +1,6 @@
-import React from 'react'
-import QuizButton from './QuizButton'
+import React from "react";
+import QuizButton from "./QuizButton";
+import "./css/templateQuestion.css";
 
 function QuizTemplate(props) {
   return (
@@ -8,15 +9,14 @@ function QuizTemplate(props) {
       <select className="question-select">
         {props.questions.map((question, index) => {
           return (
-            <div key={index}>
-              <option className="question-option">{question.text}</option>
-            </div>);
+            <option key={index} className="question-option">
+              {question.text}
+            </option>
+          );
         })}
       </select>
-      <QuizButton />
     </div>
   );
-
 }
 
 export default QuizTemplate;

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function QuizButton() {
-    return (
-        <div>
-            <button>SUBMIT</button>
-        </div>
-    )
+  return (
+    <div>
+      <button className="quiz-btn">SUBMIT</button>
+    </div>
+  );
 }
 
-export default QuizButton
+export default QuizButton;
