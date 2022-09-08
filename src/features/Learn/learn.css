@@ -52,6 +52,33 @@
     background-position: center;
 }
 
+.learn-container-background-7 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/21/22/56/fitness-1847866_960_720.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.learn-container-background-8 {
+    background-image: url("../Learn/us.jpeg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.learn-container-background-9 {
+    background-image: url("https://cdn.pixabay.com/photo/2020/09/29/12/51/man-5612736_960_720.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .learn-container {
     display: flex;
     flex-direction: row;
@@ -161,6 +188,7 @@
     justify-content: center;
     color: white;
     font-size: x-large;
+    box-shadow: 10px 10px 10px black;
 }
 
 .learn-img-container-2 {
@@ -176,6 +204,7 @@
     justify-content: center;
     color: white;
     font-size: x-large;
+    box-shadow: 10px 10px 10px black;
 }
 
 .learn-img-container-3 {
@@ -191,6 +220,7 @@
     justify-content: center;
     color: white;
     font-size: x-large;
+    box-shadow: 10px 10px 10px black;
 }
 
 .learn-img-container-4 {
@@ -206,6 +236,7 @@
     justify-content: center;
     color: white;
     font-size: x-large;
+    box-shadow: 10px 10px 10px black;
 }
 
 .learn-img-container-5 {
@@ -221,6 +252,7 @@
     justify-content: center;
     color: white;
     font-size: x-large;
+    box-shadow: 10px 10px 10px black;
 }
 
 .learn-img-container-6 {
@@ -236,6 +268,55 @@
     justify-content: center;
     color: white;
     font-size: x-large;
+    box-shadow: 10px 10px 10px black;
+}
+
+.learn-img-container-7 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/07/00/54/fitness-2378982_960_720.jpg");
+    height: 50vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+    box-shadow: 10px 10px 10px black;
+}
+
+.learn-img-container-8 {
+    background-image: url("../Learn/tomer.jpeg");
+    height: 50vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+    box-shadow: 10px 10px 10px black;
+}
+
+.learn-img-container-9 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/11/19/51/model-2842207_960_720.jpg");
+    height: 50vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+    box-shadow: 10px 10px 10px black;
 }
 
 .img-overlay-1 {

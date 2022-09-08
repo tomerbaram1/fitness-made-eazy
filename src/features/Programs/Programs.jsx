@@ -66,19 +66,19 @@ export const Programs = (props) => {
           title="Upper Body Workout"
           img="https://cdn.pixabay.com/photo/2018/12/28/16/16/exercise-3899877_1280.jpg"
           price="200$"
-          handleClick={() => handleClick("Lower Body Workout")}
+          handleClick={() => handleClick("Upper Body Workout")}
         />
         <Program
           title="Core"
           img="https://cdn.pixabay.com/photo/2016/04/13/17/00/plank-1327256_1280.jpg"
           price="100$"
-          handleClick={() => handleClick("Lower Body Workout")}
+          handleClick={() => handleClick("Core")}
         />
         <Program
           title="Crossfit"
           img="https://cdn.pixabay.com/photo/2020/11/10/15/08/crossfit-5730105_1280.jpg"
           price="200$"
-          handleClick={() => handleClick("Lower Body Workout")}
+          handleClick={() => handleClick("Crossfit")}
         />
       </div>
       <br />
