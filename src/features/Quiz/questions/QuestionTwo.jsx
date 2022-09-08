@@ -1,4 +1,5 @@
 import React from 'react'
+import QuizButton from '../QuizButton'
 
 
 
@@ -6,7 +7,9 @@ import React from 'react'
 
 function QuestionTwo() {
     return (
-        <div>QuestionTwo</div>
+        <div>
+            <QuizButton />
+        </div>
     )
 }
 
