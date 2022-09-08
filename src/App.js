@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Programs } from "./features/Programs/Programs";
 import Learn from "./features/Learn/Learn";
 import { useEffect } from "react";
+import AboutImage from "./core/About/AboutImage";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
         <Route path="/Learn" element={<Learn></Learn>}></Route>
         <Route></Route>
       </Routes>
+      <AboutImage></AboutImage>
     </div>
   );
 }
