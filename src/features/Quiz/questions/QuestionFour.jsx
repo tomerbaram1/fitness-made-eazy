@@ -1,3 +1,5 @@
+import QuizButton from '../QuizButton'
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
 
@@ -14,8 +16,10 @@ function QuestionFour() {
           { text: "Keep A Healthy Lifestyle" },
         ]}
       />
+      <Link to={"/QuestionFive"}><QuizButton /></Link>
     </div>
   );
+
 }
 
 export default QuestionFour;

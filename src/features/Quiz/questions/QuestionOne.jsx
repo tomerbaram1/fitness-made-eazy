@@ -1,5 +1,8 @@
+
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
+import QuizButton from '../QuizButton'
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function QuestionOne(props) {
   return (
@@ -15,8 +18,10 @@ function QuestionOne(props) {
           { text: "60+" },
         ]}
       />
+          <Link to={"/questionTwo"}><QuizButton /></Link>
     </div>
   );
+
 }
 
 export default QuestionOne;

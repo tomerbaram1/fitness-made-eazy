@@ -1,3 +1,4 @@
+import QuizButton from '../QuizButton'
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
 
@@ -14,8 +15,7 @@ function QuestionFive() {
           { text: "Dead" },
         ]}
       />
+            <QuizButton />
     </div>
-  );
-}
-
+  );}
 export default QuestionFive;

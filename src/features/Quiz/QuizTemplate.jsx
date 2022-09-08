@@ -1,4 +1,7 @@
+
 import React from "react";
+import React from 'react'
+import QuizButton from './QuizButton'
 
 function QuizTemplate(props) {
   return (
@@ -11,9 +14,10 @@ function QuizTemplate(props) {
           </div>;
         })}
       </select>
-      <button></button>
+        <QuizButton />
     </div>
   );
+
 }
 
 export default QuizTemplate;

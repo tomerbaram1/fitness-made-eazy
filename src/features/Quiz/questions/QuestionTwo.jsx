@@ -1,6 +1,9 @@
+
 import React from "react";
 import React, { useState } from "react";
 import QuizTemplate from "../QuizTemplate";
+import QuizButton from '../QuizButton'
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function QuestionTwo(props) {
   const [bmi, setBmi] = useState();
@@ -34,6 +37,7 @@ function QuestionTwo(props) {
           { text: "35+" },
         ]}
       />
+       <Link to={"/questionthree"}><QuizButton /></Link>
       <div className="calculator">
         <h1>BMI Calculator</h1>
         <input
@@ -52,6 +56,6 @@ function QuestionTwo(props) {
       </div>
     </div>
   );
+
 }
 
-export default QuestionTwo;
