@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: "",
+  value: "Power Lifting",
 };
 
 export const SelectedProgramSlice = createSlice({

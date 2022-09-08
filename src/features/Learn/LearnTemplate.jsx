@@ -1,6 +1,6 @@
 import React from 'react'
 import "./learn.css"
-
+import BasicButtons from './LearnButton'
 const LearnTemplate = (props) => {
     return (
         <div>
@@ -23,9 +23,7 @@ const LearnTemplate = (props) => {
                                 Buy one <br /> and get
                                 <span style={{ color: "orange" }}> one free</span>
                             </h1>
-                            <button className="button-42" role="button">
-                                <h3>BUY NOW</h3>
-                            </button>
+                            <BasicButtons />
                         </div>
                     </div>
                 </div>
