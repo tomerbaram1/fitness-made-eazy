@@ -1,8 +1,16 @@
 import React from 'react'
+import QuizButton from './QuizButton'
+
+
+
+
 
 function GenderQuestein() {
     return (
-        <div>GenderQuestein</div>
+        <div>
+            <QuizButton />
+            <QuizButton />
+        </div>
     )
 }
 
