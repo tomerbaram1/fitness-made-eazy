@@ -8,7 +8,7 @@ function QuestionFour() {
     <div>
       <QuizTemplate
         title="What best matches your primary goal? (it’s okay if you have other goals too)"
-        question={[
+        questions={[
           { text: "Improve my Strength + Muscle" },
           { text: "Improve my Strength" },
           { text: "Grow Big Muscles" },

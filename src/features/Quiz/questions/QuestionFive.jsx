@@ -7,7 +7,7 @@ function QuestionFive() {
     <div>
       <QuizTemplate
         title="Health and Lifestyle"
-        question={[
+        questions={[
           { text: "Very healthy lifestyle" },
           { text: "Healthy lifestyle" },
           { text: "Minor health problems" },
@@ -15,7 +15,8 @@ function QuestionFive() {
           { text: "Dead" },
         ]}
       />
-            <QuizButton />
+      <QuizButton />
     </div>
-  );}
+  );
+}
 export default QuestionFive;
