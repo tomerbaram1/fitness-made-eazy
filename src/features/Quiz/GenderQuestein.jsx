@@ -1,5 +1,7 @@
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import React from 'react'
 import QuizButton from './QuizButton'
+
 
 
 
@@ -8,8 +10,9 @@ import QuizButton from './QuizButton'
 function GenderQuestein() {
     return (
         <div>
-            <QuizButton />
-            <QuizButton />
+
+            <Link to={"/questionOne"}><QuizButton /></Link>
+
         </div>
     )
 }
