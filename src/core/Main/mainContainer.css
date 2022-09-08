@@ -11,11 +11,13 @@
   top: 0;
   margin-top: 50px;
 }
+
 .container-header {
   font-size: 55px;
   color: white;
   margin-bottom: 20px;
 }
+
 .container-description {
   font-size: 25px;
   color: #fff;
@@ -30,8 +32,9 @@
   font-size: 15px !important;
   font-weight: 1000 !important;
 
-  
+
 }
+
 .btn:hover {
   background: rgb(196, 113, 19);
 }
@@ -40,19 +43,24 @@
   display: flex;
   flex-direction: row;
 }
+
+
 .orange {
   color: rgb(242, 163, 5);
 }
+
 .colorText {
   color: rgb(242, 163, 5);
   font-size: xx-large;
 }
+
 .siteNameText {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5%;
   padding: 4px;
   font-size: 30px;
 }
+
 @media only screen and (max-width: 768px) {
   .container-text {
     display: flex;
@@ -66,13 +74,16 @@
     height: 100%;
     top: 0;
   }
+
   .container-description {
     color: #fff;
   }
+
   .colorText {
     color: rgb(242, 163, 5);
     font-size: 25px;
   }
+
   .container-header {
     font-size: 20px;
     color: white;
