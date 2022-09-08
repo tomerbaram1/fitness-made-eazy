@@ -18,12 +18,14 @@
 
 .artical-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background: #000000;
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  background: linear-gradient(to right, #434343, #000000);
+  /* background: -webkit-linear-gradient(to right, #434343, #000000); */
+  /* background: linear-gradient(to right, #434343, #000000); */
+  background: linear-gradient(to right, #a7a7a7, #000000e8);
+
   position: relative;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 }
 .modal-image {
   height: 100vh;
@@ -46,13 +48,13 @@ ul {
   scrollbar-width: none; /* Firefox */
 }
 
-.article-container-header {
+/* .article-container-header {
   background: #000000;
 
   background: -webkit-linear-gradient(to right, #434343, #000000);
 
   background: linear-gradient(to right, #434343, #000000);
-}
+} */
 
 .artical-header {
   font-size: xxx-large !important;
@@ -60,7 +62,7 @@ ul {
 }
 
 .MuiImageList-root {
-  gap: 20px !important;
+  gap: 10px !important;
 }
 
 .artical-img-itembar:hover {
@@ -82,4 +84,64 @@ ul {
   .artical-img-section {
     display: none;
   }
+}
+.MuiImageList-root {
+  width: 95vw !important;
+}
+.MuiImageListItemBar-titleWrap.MuiImageListItemBar-titleWrapBottom.css-1lizpae-MuiImageListItemBar-titleWrap {
+  display: none;
+}
+.articaleOverlay {
+  width: 100%;
+  height: 100%;
+
+  background: #f2a3054a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+
+    #000000b3,
+    #f2a305b3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+
+    #885b007a,
+    #885b007a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: absolute;
+}
+.articaleTitle {
+  position: absolute;
+  /* top: 30%; */
+  text-align: center;
+  font-weight: bold;
+  font-family: nunito;
+  font-weight: bolder;
+  /* left: 40%; */
+  color: white;
+  width: 20vw;
+  text-align: left;
+  z-index: 3;
+  bottom: 35%;
+  left: 13%;
+}
+.MuiImageListItem-root.MuiImageListItem-standard.article-images.css-ta95xa-MuiImageListItem-root
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  position: absolute;
+  z-index: 4;
+  background-color: rgb(242, 163, 5, 0.85);
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  top: 68%;
+  width: 18vw;
+  height: 10vh;
+  /* border-radius: 0; */
+  left: 13%;
+}
+.MuiImageListItem-root.MuiImageListItem-standard.article-images.css-ta95xa-MuiImageListItem-root
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: rgba(233, 233, 233, 0.7);
+  color: gray;
 }
