@@ -2,6 +2,7 @@ import React from "react";
 import QuizTemplate from "../QuizTemplate";
 import QuizButton from "../QuizButton";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 function QuestionOne() {
   const questions = [
@@ -14,10 +15,11 @@ function QuestionOne() {
   ];
   return (
     <div>
-      <QuizTemplate title="How old are you?" questions={questions} />
-      <Link to={"/questionTwo"}>
-        <QuizButton />
-      </Link>
+      <QuizTemplate
+        title="How old are you?"
+        questions={questions}
+        buttonLinkTo="/questionTwo"
+      />
     </div>
   );
 }

@@ -16,10 +16,8 @@ function QuestionFour() {
       <QuizTemplate
         title="What best matches your primary goal? (it’s okay if you have other goals too)"
         questions={questions}
+        buttonLinkTo={"/QuestionFive"}
       />
-      <Link to={"/QuestionFive"}>
-        <QuizButton />
-      </Link>
     </div>
   );
 }

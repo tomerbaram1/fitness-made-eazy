@@ -1,0 +1,57 @@
+.articalesImageContainer {
+  width: 98.7vw;
+  height: 30vh;
+  display: flex;
+  /* border: 2px solid grey; */
+  position: relative;
+}
+.articalesImage {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* border: 2px solid grey; */
+  background-image: url(./img/ourArticales.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.articalesImageOverlay {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  /* background-color: rgba(255, 166, 0, 0.52); */
+
+  background: #f2a305b3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+
+    #f2a305b3,
+    #000000b3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+
+    #f2a305b3,
+    #000000b3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  z-index: 2;
+}
+/* .articalesTitle {
+    position: absolute;
+    z-index: 1;
+    right: 12%;
+    margin-top: 4%;
+    color: darkorange;
+    font-weight: bold;
+  }
+  .articalesSecondTitle {
+    position: absolute;
+    z-index: 1;
+    right: 8%;
+    margin-top: 8%;
+    color: darkorange;
+    font-weight: bold;
+  } */
