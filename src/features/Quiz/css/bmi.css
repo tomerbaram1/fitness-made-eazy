@@ -1,13 +1,14 @@
 .calculator{
-    height: 20%;
+    height: 30vh;
     color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
-
-
-
+    border-color: rgba(62, 67, 70, 0.26);
+    background-color: rgb(62 67 69 / 17%);
+    background: initial;
+    box-shadow: rgb(0 0 0 / 95%) 0px 2px 70px 5px;
 }
 .input-bmi{
     width: 6vw;
