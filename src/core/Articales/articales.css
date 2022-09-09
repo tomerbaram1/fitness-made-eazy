@@ -4,7 +4,7 @@
 
 .MuiImageList-root {
   width: 60vw !important;
-  height: 150vh !important;
+  height: auto !important;
 }
 
 .artical-img-section {
@@ -22,7 +22,7 @@
   background: #000000;
   /* background: -webkit-linear-gradient(to right, #434343, #000000); */
   /* background: linear-gradient(to right, #434343, #000000); */
-  background: linear-gradient(to right, #a7a7a7, #000000e8);
+  background: linear-gradient(to right, #323232e8, #a7a7a7);
 
   position: relative;
   /* flex-direction: row-reverse; */
@@ -34,7 +34,7 @@
 .artical-section-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 2%;
   overflow: hidden;
 }
 
@@ -144,4 +144,13 @@ ul {
   .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
   background-color: rgba(233, 233, 233, 0.7);
   color: gray;
+}
+.articales-head {
+  height: 30%;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(28, 27, 27, 0.958);
+  transition: transform 300ms ease-in;
+  border-radius: 2%;
+  /* border: 1px rgba(255, 166, 0, 0.192) solid; */
 }

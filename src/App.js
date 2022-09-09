@@ -11,6 +11,7 @@ import QuestionTwo from "./features/Quiz/questions/QuestionTwo";
 import QuestionThree from "./features/Quiz/questions/QuestionThree";
 import QuestionFour from "./features/Quiz/questions/QuestionFour";
 import QuestionFive from "./features/Quiz/questions/QuestionFive";
+import QuizAnswer from "./features/Quiz/QuizAnswer";
 function App() {
   return (
     <div className="App">
@@ -18,12 +19,31 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/Programs" element={<Programs></Programs>}></Route>
         <Route path="/Learn" element={<Learn></Learn>}></Route>
-        <Route path="/genderquestion" element={<GenderQuestein></GenderQuestein>}></Route>
-        <Route path="/questionOne" element={<QuestionOne></QuestionOne>}></Route>
-        <Route path="/questionTwo" element={<QuestionTwo></QuestionTwo>}></Route>
-        <Route path="/questionthree" element={<QuestionThree></QuestionThree>}></Route>
-        <Route path="/questionFour" element={<QuestionFour></QuestionFour>}></Route>
-        <Route path="/questionFive" element={<QuestionFive></QuestionFive>}></Route>
+        <Route
+          path="/genderquestion"
+          element={<GenderQuestein></GenderQuestein>}
+        ></Route>
+        <Route
+          path="/questionOne"
+          element={<QuestionOne></QuestionOne>}
+        ></Route>
+        <Route
+          path="/questionTwo"
+          element={<QuestionTwo></QuestionTwo>}
+        ></Route>
+        <Route
+          path="/questionthree"
+          element={<QuestionThree></QuestionThree>}
+        ></Route>
+        <Route
+          path="/questionFour"
+          element={<QuestionFour></QuestionFour>}
+        ></Route>
+        <Route
+          path="/questionFive"
+          element={<QuestionFive></QuestionFive>}
+        ></Route>
+        <Route path="/quizAnswer" element={<QuizAnswer></QuizAnswer>}></Route>
       </Routes>
     </div>
   );

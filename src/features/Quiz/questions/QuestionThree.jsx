@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function QuestionThree(props) {
   const questions = [
-    { text: "No History (never trained beofore)" },
+    { text: "No History (never trained before)" },
     { text: "Minimal" },
     { text: "Average training" },
     { text: "Active (active exercise routine)" },
@@ -13,10 +13,11 @@ function QuestionThree(props) {
   ];
   return (
     <div>
-      <QuizTemplate title="Training History" questions={questions} />
-      <Link to={"/questionFour"}>
-        <QuizButton />
-      </Link>
+      <QuizTemplate
+        title="Training History"
+        questions={questions}
+        buttonLinkTo={"/questionFour"}
+      />
     </div>
   );
 }

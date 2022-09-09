@@ -7,63 +7,67 @@ import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import "./articales.css";
 import { Button } from "@mui/material";
+import ArticalesHeader from "./ArticalesHeader";
 export default function TitlebarImageList() {
   return (
-    <div className="artical-container">
-      <div className="artical-img-section">
-        {/* <h1>
+    <>
+      <ArticalesHeader></ArticalesHeader>
+      <div className="artical-container">
+        <div className="artical-img-section">
+          {/* <h1>
           ITS NOT ONLY LOOKING GOOD<br></br>
           <span className="imgsection-title">ITS THE WAY OF LIFE...</span>
         </h1> */}
-        {/* <img
+          {/* <img
           className="modal-image"
           src="https://jeffnippard.com/wp-content/uploads/2020/06/About-Jeff-Nippard.png"
         ></img> */}
-      </div>
-      <div className="artical-section-container">
-        <ImageList sx={{ width: 500, height: 450 }}>
-          {/* <ImageListItem key="Subheader" cols={2}>
+        </div>
+        <div className="artical-section-container">
+          <ImageList sx={{ width: 500, height: 450 }}>
+            {/* <ImageListItem key="Subheader" cols={2}>
             <ListSubheader className="article-container-header" component="div">
               <h1 className="artical-header">OUR ARTICLES</h1>
             </ListSubheader>
           </ImageListItem> */}
-          {itemData.map((item) => (
-            <ImageListItem className="article-images" key={item.img}>
-              <img
-                src={`${item.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="lazy"
-              />
-              <div className="articaleOverlay"></div>
-              <div>
-                <h1 className="articaleTitle">{item.title}</h1>
-                <Button className="readMoreButton">Read More</Button>
-              </div>
+            {itemData.map((item) => (
+              <ImageListItem className="article-images" key={item.img}>
+                <img
+                  src={`${item.img}?w=248&fit=crop&auto=format`}
+                  srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                  alt={item.title}
+                  loading="lazy"
+                />
+                <div className="articaleOverlay"></div>
+                <div>
+                  <h1 className="articaleTitle">{item.title}</h1>
+                  <Button className="readMoreButton">Read More</Button>
+                </div>
 
-              <ImageListItemBar
-              // className="artical-img-itembar"
-              // title={item.title}
-              // actionIcon={
-              //   <IconButton
-              //     sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-              //     aria-label={`info about ${item.title}`}
-              //   >
-              //     <a
-              //       href={item.link}
-              //       target="_blank"
-              //       rel="noopener noreferrer"
-              //     >
-              //       💪
-              //     </a>
-              //   </IconButton>
-              // }
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
+                <ImageListItemBar
+                // className="artical-img-itembar"
+                // title={item.title}
+                // actionIcon={
+                //   <IconButton
+                //     sx={{ color: "rgba(255, 255, 255, 0.54)" }}
+                //     aria-label={`info about ${item.title}`}
+                //   >
+                //     <a
+                //       href={item.link}
+                //       target="_blank"
+                //       rel="noopener noreferrer"
+                //     >
+                //       💪
+                //     </a>
+                //   </IconButton>
+                // }
+                />
+              </ImageListItem>
+            ))}
+          </ImageList>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

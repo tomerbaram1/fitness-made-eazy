@@ -12,8 +12,11 @@ function QuestionFive() {
   ];
   return (
     <div>
-      <QuizTemplate title="Health and Lifestyle" questions={questions} />
-      <QuizButton />
+      <QuizTemplate
+        title="Health and Lifestyle"
+        buttonLinkTo={"/quizAnswer"}
+        questions={questions}
+      />
     </div>
   );
 }

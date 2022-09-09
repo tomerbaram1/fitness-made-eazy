@@ -1,9 +1,11 @@
 import React from "react";
 
-function QuizButton() {
+function QuizButton(props) {
   return (
     <div>
-      <button className="quiz-btn">SUBMIT</button>
+      <button type="submit" className="quiz-btn" onClick={props.handleClick}>
+        SUBMIT
+      </button>
     </div>
   );
 }

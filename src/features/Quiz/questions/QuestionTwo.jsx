@@ -33,10 +33,12 @@ function QuestionTwo(props) {
   ];
   return (
     <div className="bmi-questein">
-      <QuizTemplate title="What is your BMI?" questions={questions} />
-      <Link to={"/questionthree"}>
-        <QuizButton />
-      </Link>
+      <QuizTemplate
+        title="What is your BMI?"
+        questions={questions}
+        buttonLinkTo={"/questionthree"}
+      />
+
       <div className="calculator">
         <h1>BMI Calculator</h1>
         <input
