@@ -6,14 +6,18 @@ import Navbar from "../../core/Navbar/Navbar";
 import Footer from "../../core/Footer/Footer";
 import { useDispatch } from "react-redux";
 import { setIsWomanFalse, setIsWomanTrue } from "../../reducers/QuizGradeSlice";
+import BmiCalc from "./questions/BmiCalc";
+
 function GenderQuestein() {
   const dispatch = useDispatch();
   return (
     <>
       <Navbar />
+      <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <div className="gender-questein">
         <h1 className="question-title">What is your Gender?</h1>
-
+        <br />
+        <br />
         <Link to={"/questionOne"}>
           <button
             className="quiz-btn"
@@ -22,7 +26,6 @@ function GenderQuestein() {
             MALE
           </button>
         </Link>
-
         <Link to={"/questionOne"}>
           <button
             className="quiz-btn"
@@ -30,8 +33,14 @@ function GenderQuestein() {
           >
             FEMALE
           </button>
+          <br /> <br /> <br />
         </Link>
+        <br /> <br />
+        <BmiCalc />
       </div>
+      <br />
+      <br />
+      <br />
       <Footer />
     </>
   );

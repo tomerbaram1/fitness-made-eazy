@@ -1,10 +1,15 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import QuizButton from "./QuizButton";
 import "./css/templateQuestion.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToGrade } from "../../reducers/QuizGradeSlice";
 import { change } from "../../reducers/SelectedProgramSlice";
+import Navbar from "../../core/Navbar/Navbar";
+import Footer from "../../core/Footer/Footer";
+import { Collapse, CssBaseline, IconButton } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function QuizTemplate(props) {
   const dispatch = useDispatch();
@@ -166,30 +171,58 @@ function QuizTemplate(props) {
         break;
     }
   };
-
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+    setChecked(true);
+  }, []);
   return (
-    <div className="question-body">
-      <h1 className="question-title">{props.title}</h1>
-      <select className="question-select" value={value} onChange={handleChange}>
-        <option className="question-option" value={""}>
-          -select-
-        </option>
-        {props.questions.map((question, index) => {
-          return (
-            <option key={index} className="question-option">
-              {question.text}
-            </option>
-          );
-        })}
-      </select>
-      {value !== "-select-" ? (
-        <Link to={`${props.buttonLinkTo}`}>
-          <QuizButton handleClick={() => handleClick()} />
-        </Link>
-      ) : (
-        <QuizButton />
-      )}
-    </div>
+    <React.Fragment>
+      <CssBaseline />
+      <>
+        <Navbar />
+        <br /> <br /> <br /> <br /> <br /> <br /> <br />
+        <div className="question-body">
+          <Collapse
+            in={checked}
+            {...(checked ? { timeout: 1000 } : {})}
+            collapsedheight={50}
+          >
+            <h1 className="question-title">{props.title}</h1>
+            <select
+              className="question-select"
+              value={value}
+              onChange={handleChange}
+            >
+              <option className="question-option" value={""}>
+                Select
+              </option>
+              {props.questions.map((question, index) => {
+                return (
+                  <option key={index} className="question-option">
+                    {question.text}
+                  </option>
+                );
+              })}
+            </select>
+            <br /> <br /> <br />
+            {value !== "-select-" ? (
+              <Link to={`${props.buttonLinkTo}`}>
+                <QuizButton handleClick={() => handleClick()} />
+              </Link>
+            ) : (
+              <QuizButton />
+            )}
+          </Collapse>
+          <IconButton>
+            <ExpandMoreIcon
+              sx={{ color: "rgb(242, 163, 5)", fontSize: "2rem" }}
+            />
+          </IconButton>
+        </div>
+        <br /> <br /> <br /> <br /> <br /> <br />
+        <Footer />
+      </>
+    </React.Fragment>
   );
 }
 

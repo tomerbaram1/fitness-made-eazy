@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { change } from "../../reducers/SelectedProgramSlice";
-import QuizButton from "./QuizButton";
-
+import "./css/templateQuestion.css";
 const QuizAnswer = () => {
   const selectedProgram = useSelector((state) => state.selectedProgram.value);
   const quizGrade = useSelector((state) => state.quizGrade.QuizGrade);
@@ -57,13 +56,24 @@ const QuizAnswer = () => {
     }
   }, []);
   return (
-    <div>
-      <h1 style={{ color: "white" }}>
-        The Best Workout For You Is {selectedProgram}
-      </h1>
-      <Link to={"/Learn"}>
-        <QuizButton>Get Workout</QuizButton>
-      </Link>
+    <div className="answer-page">
+      <div className="answer-card">
+        <h1 className="question-title" style={{ color: "white" }}>
+          Congratulations!
+        </h1>
+        <span style={{ color: "orange" }}>We have found your workout 😇 </span>
+        <br />
+        <br />
+        <br />
+        <h1 style={{ color: "white" }}>
+          The Best Workout For You Is <br /> {selectedProgram} 👊
+        </h1>
+        <br />
+        <br />
+        <Link to={"/Learn"}>
+          <button className="quiz-btn">Get Workout</button>
+        </Link>
+      </div>
     </div>
   );
 };
