@@ -13,16 +13,6 @@ export default function TitlebarImageList() {
     <>
       <ArticalesHeader></ArticalesHeader>
       <div className="artical-container">
-        <div className="artical-img-section">
-          {/* <h1>
-          ITS NOT ONLY LOOKING GOOD<br></br>
-          <span className="imgsection-title">ITS THE WAY OF LIFE...</span>
-        </h1> */}
-          {/* <img
-          className="modal-image"
-          src="https://jeffnippard.com/wp-content/uploads/2020/06/About-Jeff-Nippard.png"
-        ></img> */}
-        </div>
         <div className="artical-section-container">
           <ImageList sx={{ width: 500, height: 450 }}>
             {/* <ImageListItem key="Subheader" cols={2}>
