@@ -1,8 +1,6 @@
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
-import QuizButton from "../QuizButton";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+
 import Navbar from "../../../core/Navbar/Navbar";
 import Footer from "../../../core/Footer/Footer";
 

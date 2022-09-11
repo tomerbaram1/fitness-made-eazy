@@ -16,9 +16,9 @@ const AboutPeople = () => {
       />
 
       <div className="people-img">
-        <img src={tomerImg} />
-        <img src={sagiImg} />
-        <img src={raniImg} />
+        <img alt="tomer" src={tomerImg} />
+        <img alt="sagi" src={sagiImg} />
+        <img alt="rani" src={raniImg} />
       </div>
     </div>
   );

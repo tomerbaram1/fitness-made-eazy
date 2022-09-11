@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import QuizTemplate from "../QuizTemplate";
-import QuizButton from "../QuizButton";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import Footer from "../../../core/Footer/Footer";
 import BmiCalc from "./BmiCalc";

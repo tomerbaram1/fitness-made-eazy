@@ -1,5 +1,3 @@
-import QuizButton from "../QuizButton";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
 import Navbar from "../../../core/Navbar/Navbar";

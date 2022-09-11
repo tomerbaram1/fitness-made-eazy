@@ -1,12 +1,10 @@
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import React from "react";
 import "./css/templateQuestion.css";
-import { Button } from "@mui/material";
 import Navbar from "../../core/Navbar/Navbar";
 import Footer from "../../core/Footer/Footer";
 import { useDispatch } from "react-redux";
 import { setIsWomanFalse, setIsWomanTrue } from "../../reducers/QuizGradeSlice";
-import BmiCalc from "./questions/BmiCalc";
 
 function GenderQuestein() {
   const dispatch = useDispatch();
