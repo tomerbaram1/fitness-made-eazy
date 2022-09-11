@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import StickyNavBar from "./components/advenced/StickyNavBar/StickyNavBar.jsx";
 import logo from "./img/logo.png";
 
@@ -11,7 +12,7 @@ const Navbar = (props) => {
         props.haveAbout
           ? [
               { title: "Home", link: "/" },
-              { title: "About", link: "/#aboutPage" },
+              { title: "About Us", link: "/AboutUs" },
               { title: "Programs", link: "/Programs" },
             ]
           : [

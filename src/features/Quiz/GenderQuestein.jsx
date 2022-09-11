@@ -36,7 +36,6 @@ function GenderQuestein() {
           <br /> <br /> <br />
         </Link>
         <br /> <br />
-        <BmiCalc />
       </div>
       <br />
       <br />

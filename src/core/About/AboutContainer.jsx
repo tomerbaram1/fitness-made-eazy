@@ -1,46 +1,37 @@
 import "./aboutContainer.css";
 import React from "react";
+import videoAbout from "./about-video.mp4";
+import Info from "./Info";
+import AboutMain from "./about-main/AboutMain";
+import AboutHeader from "./AboutHeader";
+import AboutPeople from "./AboutPeople";
 
-export default function AboutContainer() {
+export default function AboutContainer(props) {
   return (
     <div id="aboutPage" className="container">
-      <div className="text-img"></div>
       <div className="text">
-        <h1 className="text-header">
-          The greatest <span className="orange">power</span> is knowledge and
-          knowledge is our <span className="orange">power</span>
-        </h1>
-        <br />
+        <AboutHeader />
+        <div className="text-header">
+          <h1>
+            The greatest <span className="orange">power</span> is knowledge and
+            knowledge is our <span className="orange">POWER</span>
+          </h1>
+        </div>
 
-        <p className="text-upper">
-          Through his science-based Youtube channel, with over 2 million
-          subscribers, Jeff shares the knowledge he has gathered through
-          university education and field experience with those who share his
-          passion for the science behind building muscle, losing fat, and
-          gaining strength. Here are some of his accomplishments:
-        </p>
-        <br />
+        <video className="videoAbout" src={videoAbout} autoPlay loop muted />
 
+        <Info
+          header="Our Story"
+          firstPar="Gym and Fitness was founded in 2002 as a family owned and operated
+         business specialising in supplying high-quality gym equipment at
+         great prices."
+          secondPar="Instead of being just another gym equipment retailer, our founders wanted to be the best in the industry and set their minds to doing so! Over the last two decades Gym and Fitness has grown into one of Australia’s largest online fitness equipment retailers, helping thousands of customers live longer, happier and healthier lives."
+        />
+
+        <AboutMain />
         <br />
-        <ul className="text-list">
-          <li>Mr. Junior Canada for Natural Bodybuilding (2012)</li>
-          <li>Overall Champion WNBF Natural Muscle Mayhem (2014)</li>
-          <li>
-            Canadian National Powerlifting championships 2014: 502 lb squat, 336
-            lb bench
-          </li>
-          <li>press, 518 lb deadlift (2nd place)</li>
-          <li>
-            10+ years of coaching experience at the provincial, national, world,
-            and professional
-          </li>
-          <li>level for physique and strength sports</li>
-        </ul>
+        <AboutPeople />
         <br />
-        <p className="text-footer">
-          Jeff currently lives in Ontario, Canada, where he is producing YouTube
-          videos and programs for people around the world.
-        </p>
       </div>
     </div>
   );

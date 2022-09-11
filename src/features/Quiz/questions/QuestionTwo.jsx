@@ -4,6 +4,8 @@ import QuizButton from "../QuizButton";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 import Footer from "../../../core/Footer/Footer";
+import BmiCalc from "./BmiCalc";
+import Navbar from "../../../core/Navbar/Navbar";
 
 function QuestionTwo(props) {
   const questions = [
@@ -15,11 +17,14 @@ function QuestionTwo(props) {
   ];
   return (
     <div className="bmi-questein">
+      <Navbar />
       <QuizTemplate
         title="What is your BMI?"
         questions={questions}
         buttonLinkTo={"/questionthree"}
       />
+      <BmiCalc />
+      <Footer />
     </div>
   );
 }

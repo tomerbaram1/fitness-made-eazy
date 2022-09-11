@@ -12,7 +12,7 @@ const Home = () => {
       <CssBaseline />
       <Navbar haveAbout={true}></Navbar>
       <Main></Main>
-      <About></About>
+
       <Articales></Articales>
       <Footer></Footer>
     </div>

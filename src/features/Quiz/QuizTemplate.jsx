@@ -6,8 +6,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToGrade } from "../../reducers/QuizGradeSlice";
 import { change } from "../../reducers/SelectedProgramSlice";
-import Navbar from "../../core/Navbar/Navbar";
-import Footer from "../../core/Footer/Footer";
+
 import { Collapse, CssBaseline, IconButton } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -179,7 +178,6 @@ function QuizTemplate(props) {
     <React.Fragment>
       <CssBaseline />
       <>
-        <Navbar />
         <br /> <br /> <br /> <br /> <br /> <br /> <br />
         <div className="question-body">
           <Collapse
@@ -219,8 +217,6 @@ function QuizTemplate(props) {
             />
           </IconButton>
         </div>
-        <br /> <br /> <br /> <br /> <br /> <br />
-        <Footer />
       </>
     </React.Fragment>
   );
