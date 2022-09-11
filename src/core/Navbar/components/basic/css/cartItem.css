@@ -10,16 +10,38 @@
   margin-left: 2.5vw;
 }
 .cartItem.cartItemPrice {
-  width: 25%;
+  width: 15%;
   color: orange;
+  text-align: center;
 }
 .cartItem.cartItemTitle {
-  width: 50%;
+  width: 60%;
+  font-size: medium;
+  text-align: center;
 }
 .cartItem.cartItemImage {
   width: 15%;
 }
+.cartItem.cartItemCount {
+  text-align: center;
+  color: orange;
+}
 .cartItemBorder {
   width: 30vw;
   margin-left: 2.5vw;
+}
+.cartItemCounterContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 7vw;
+  margin-left: 7vw;
+}
+.cartItemCounterButton {
+  background-color: orange !important;
+  color: white !important;
+  width: 1vw !important;
+  height: 3vh !important;
+}
+.cartItemCounterButton:hover {
+  background-color: rgb(164, 107, 0) !important;
 }

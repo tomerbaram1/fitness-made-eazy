@@ -10,8 +10,27 @@
   margin: 0;
 }
 .css-6hp17o-MuiList-root-MuiMenu-list {
-  background-color: #7d7d7d;
+  background-color: white;
+  width: 20vw;
+  height: 70vh;
+  margin-right: 200px;
 }
 hr {
   border-top: 1px solid grey;
+}
+.loginAndRegisterContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.css-12x4bse-MuiButtonBase-root-MuiMenuItem-root {
+  width: 50%;
+  color: black;
+  justify-content: center;
+}
+.myCartButtonContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  margin: 0 !important;
+  align-content: center !important;
+  align-items: center !important;
 }
