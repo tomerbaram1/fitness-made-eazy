@@ -1,4 +1,3 @@
-import React from 'react'
 import "./learn.css"
 import BasicButtons from './LearnButton'
 const LearnTemplate = (props) => {
