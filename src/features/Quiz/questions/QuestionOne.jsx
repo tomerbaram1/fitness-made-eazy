@@ -3,6 +3,8 @@ import QuizTemplate from "../QuizTemplate";
 import QuizButton from "../QuizButton";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import Navbar from "../../../core/Navbar/Navbar";
+import Footer from "../../../core/Footer/Footer";
 
 function QuestionOne() {
   const questions = [
@@ -15,11 +17,13 @@ function QuestionOne() {
   ];
   return (
     <div>
+      <Navbar />
       <QuizTemplate
         title="How old are you?"
         questions={questions}
         buttonLinkTo="/questionTwo"
       />
+      <Footer />
     </div>
   );
 }

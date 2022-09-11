@@ -1,12 +1,16 @@
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import "./about.css";
 import AboutContainer from "./AboutContainer";
-import AboutHeader from "./AboutHeader";
 
 export default function About() {
   return (
     <div className="about">
-      <AboutHeader />
+      <Navbar />
+      <br />
+      <br />
       <AboutContainer />
+      <Footer />
     </div>
   );
 }

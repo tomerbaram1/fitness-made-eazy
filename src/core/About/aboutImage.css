@@ -1,5 +1,5 @@
 .aboutImageContainer {
-  width: 98.7vw;
+  width: 100vw;
   height: 30vh;
   display: flex;
   /* border: 2px solid grey; */
@@ -39,19 +39,16 @@
 
   z-index: 2;
 }
-/* .aboutTitle {
-  position: absolute;
-  z-index: 1;
-  right: 12%;
-  margin-top: 4%;
-  color: darkorange;
-  font-weight: bold;
+
+@media only screen and (max-width: 768px) {
+  .about-head{
+    display: none;
+  }
+
 }
-.aboutSecondTitle {
-  position: absolute;
-  z-index: 1;
-  right: 8%;
-  margin-top: 8%;
-  color: darkorange;
-  font-weight: bold;
-} */
+@media only screen and (max-width: 1024px) {
+  .about-head{
+    display: none;
+  }
+
+}

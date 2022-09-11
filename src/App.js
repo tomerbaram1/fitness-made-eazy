@@ -12,6 +12,8 @@ import QuestionThree from "./features/Quiz/questions/QuestionThree";
 import QuestionFour from "./features/Quiz/questions/QuestionFour";
 import QuestionFive from "./features/Quiz/questions/QuestionFive";
 import QuizAnswer from "./features/Quiz/QuizAnswer";
+
+import About from "./core/About/About";
 function App() {
   return (
     <div className="App">
@@ -44,7 +46,9 @@ function App() {
           element={<QuestionFive></QuestionFive>}
         ></Route>
         <Route path="/quizAnswer" element={<QuizAnswer></QuizAnswer>}></Route>
+        <Route path="/AboutUs" element={<About/>}></Route>
       </Routes>
+
     </div>
   );
 }
