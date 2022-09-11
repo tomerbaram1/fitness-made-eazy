@@ -96,6 +96,12 @@
     align-items: center;
 }
 
+.addtocartbutton {
+    animation: pulse;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+}
+
 
 .overlay {
     background: #3333334f;
