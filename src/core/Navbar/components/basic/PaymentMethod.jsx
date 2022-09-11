@@ -1,7 +1,7 @@
 // import * as React from "react";
 import Backdrop from "@mui/material/Backdrop";
 import { useSelector, useDispatch } from "react-redux";
-import { openPay, closePay } from "../../../../reducers/OpenPaymentSlice";
+
 // import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
@@ -19,6 +19,7 @@ import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { Formik } from "formik";
+import { grey } from "@mui/material/colors";
 
 const style = {
   position: "absolute",
@@ -26,7 +27,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: "background.paper",
+  bgcolor: grey[100],
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
@@ -36,16 +37,12 @@ const style = {
   fontStyle: "italic",
 };
 
-export default function TransitionsModal() {
-  const openPayment = useSelector((state) => state.openPayment.value);
-  const dispatch = useDispatch();
-  const [openPay, setOpenPay] = React.useState(false);
+const PaymentMethod = (props) => {
   const handleOpen = () => {
-    dispatch(openPay());
     setShowOverlay(true);
   };
   const handleClose = () => {
-    dispatch(closePay());
+    props.setOpenPaymentMethod(false);
     setShowOverlay(false);
   };
 
@@ -140,7 +137,7 @@ export default function TransitionsModal() {
           <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
-            openPay={openPayment}
+            open={props.openPaymentMethod}
             onClose={handleClose}
             closeAfterTransition
             BackdropComponent={Backdrop}
@@ -149,7 +146,7 @@ export default function TransitionsModal() {
             }}
           >
             <form onSubmit={handleSubmit}>
-              <Fade in={openPayment}>
+              <Fade in={props.openPaymentMethod}>
                 <Box sx={style}>
                   <Typography
                     id="transition-modal-title"
@@ -279,4 +276,5 @@ export default function TransitionsModal() {
       </Formik>
     </div>
   );
-}
+};
+export default PaymentMethod;

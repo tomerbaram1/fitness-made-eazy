@@ -2,39 +2,53 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+
 import "./css/myCart.css";
 import CartItem from "../../basic/CartItem.jsx";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { grey } from "@mui/material/colors";
 import { useDispatch, useSelector } from "react-redux";
 import { closeMyCartFunction } from "../../../../../reducers/OpenMyCartSlice";
+import {
+  removeFromMyCart,
+  addToMyCart,
+} from "../../../../../reducers/MyCartSlice";
+import PaymentMethod from "../../basic/PaymentMethod";
 export default function MyCart(props) {
-  const cartItems = [
-    {
-      image: "",
-      title: "hihi",
-      price: "21$",
-    },
-    { image: "", title: "aksodkasodkas", price: "22" },
-    { image: "", title: "ajaa", price: "12" },
-  ];
+  const [openPaymentMethod, setOpenPaymentMethod] = React.useState(false);
+  const cartItems = useSelector((state) => state.myCart.MyCartItems);
+  const dispatch = useDispatch();
+  const removeItemCount = (index) => {
+    dispatch(removeFromMyCart(index));
+  };
+  const addItemCount = (index) => {
+    dispatch(
+      addToMyCart({
+        image: cartItems[index].Image,
+        title: cartItems[index].title,
+        price: cartItems[index].price,
+      })
+    );
+  };
 
   const itemsComponent = cartItems.map((item) => (
     <CartItem
       image={item.image}
       title={item.title}
       price={item.price}
+      count={item.count}
+      handleRemove={() => removeItemCount(cartItems.indexOf(item))}
+      handleAdd={() => addItemCount(cartItems.indexOf(item))}
     ></CartItem>
   ));
-
+  const getPriceSum = () => {
+    let priceSum = 0;
+    cartItems.forEach((element) => {
+      priceSum = priceSum + element.price;
+    });
+    return priceSum;
+  };
+  const priceSum = getPriceSum();
   return (
     <div className="cartContainer">
       <div className="cartTitleContainer">
@@ -42,8 +56,15 @@ export default function MyCart(props) {
       </div>
       <hr className="cartTitleBorder"></hr>
       <div className="cartItemsContainer">{itemsComponent}</div>
+      <h1 className="cartSum">sum: {priceSum}$</h1>
       <div className="buttonsContainer">
-        <Button size="Large" variant="contained">
+        <Button
+          size="Large"
+          variant="contained"
+          onClick={() => {
+            setOpenPaymentMethod(true);
+          }}
+        >
           Procced To Checkout
         </Button>
         <Button
@@ -54,6 +75,10 @@ export default function MyCart(props) {
         >
           Continue Shopping
         </Button>
+        <PaymentMethod
+          openPaymentMethod={openPaymentMethod}
+          setOpenPaymentMethod={setOpenPaymentMethod}
+        ></PaymentMethod>
       </div>
     </div>
   );
