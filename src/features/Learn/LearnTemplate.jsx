@@ -1,5 +1,6 @@
 import "./learn.css"
 import BasicButtons from './LearnButton'
+import 'animate.css';
 const LearnTemplate = (props) => {
     return (
         <div>
@@ -17,12 +18,14 @@ const LearnTemplate = (props) => {
                                 <h4>hypertrophy program</h4>
                             </div>
                         </div>
-                        <div className="button-header">
+                        <div className="button-header ">
                             <h1>
                                 Buy one <br /> and get
                                 <span style={{ color: "orange" }}> one free</span>
                             </h1>
-                            <BasicButtons />
+                            <div className="addtocartbutton">
+                                <BasicButtons />
+                            </div>
                         </div>
                     </div>
                 </div>
