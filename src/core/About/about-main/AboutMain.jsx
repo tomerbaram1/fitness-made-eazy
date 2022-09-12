@@ -1,15 +1,24 @@
 import React from "react";
-import Info from "../Info";
 import Template from "./Template";
 import "./aboutMain.css";
 
 const AboutMain = (props) => {
   return (
     <div className="about-box">
-      <Info
+      {/* <Info
+        className="aboutTitleContainer"
         header="OUR VALUES"
         secondPar="For 20 years helping customers reach their fitness goals has been at the heart of what we do and why we do it! We live and breathe our six core values and four brand promises  — which speak of our commitment to our customers, staff, the industry and our business as a whole. "
-      />
+      /> */}
+      <div className="aboutTitleContainer">
+        <h3>
+          For 20 years helping customers reach their fitness goals has been at
+          the heart of what we do and why we do it! We live and breathe our six
+          core values and four brand promises — which speak of our commitment to
+          our customers, staff, the industry and our business as a whole.{" "}
+        </h3>
+      </div>
+      <hr className="aboutHR"></hr>
       <div className="values-container">
         <Template
           img="https://i.shgcdn.com/569b91b1-8706-4d23-ba57-18a79e32ae6c/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
@@ -42,6 +51,7 @@ const AboutMain = (props) => {
           par="To help turn our ideas into reality, we embrace a culture of creative innovation in our people, processes and products."
         />
       </div>
+      <hr className="aboutHR"></hr>
     </div>
   );
 };

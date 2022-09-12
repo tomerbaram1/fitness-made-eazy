@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import QuizButton from "./QuizButton";
 import "./css/templateQuestion.css";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToGrade } from "../../reducers/QuizGradeSlice";
 
@@ -176,7 +176,6 @@ function QuizTemplate(props) {
     <React.Fragment>
       <CssBaseline />
       <>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br />
         <div className="question-body">
           <Collapse
             in={checked}

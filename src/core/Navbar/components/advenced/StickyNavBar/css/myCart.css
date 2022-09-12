@@ -71,3 +71,30 @@
   text-transform: uppercase;
   font-size: medium;
 }
+@media only screen and (max-width: 768px) {
+  .cartContainer {
+    width: 100vw;
+  }
+  .cartItemsContainer {
+    width: 95vw;
+    margin-left: 2.5vw;
+  }
+  .buttonsContainer {
+    width: 95vw;
+    margin-left: 2.5vw;
+  }
+  .buttonsContainer .css-sghohy-MuiButtonBase-root-MuiButton-root {
+    width: 80vw;
+  }
+  .buttonsContainer .css-1plxeyz-MuiButtonBase-root-MuiButton-root {
+    width: 80vw;
+    height: 6vh;
+  }
+  .cartTitleBorder {
+    width: 95vw;
+    margin-left: 2.5vw;
+  }
+  .cartSum {
+    text-align: center;
+  }
+}

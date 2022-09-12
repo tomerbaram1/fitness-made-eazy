@@ -1,8 +1,7 @@
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import React from "react";
 import "./css/templateQuestion.css";
 import Navbar from "../../core/Navbar/Navbar";
-import Footer from "../../core/Footer/Footer";
 import { useDispatch } from "react-redux";
 import { setIsWomanFalse, setIsWomanTrue } from "../../reducers/QuizGradeSlice";
 
@@ -24,6 +23,7 @@ function GenderQuestein() {
             MALE
           </button>
         </Link>
+        <br></br>
         <Link to={"/questionOne"}>
           <button
             className="quiz-btn"
@@ -38,7 +38,6 @@ function GenderQuestein() {
       <br />
       <br />
       <br />
-      <Footer />
     </>
   );
 }

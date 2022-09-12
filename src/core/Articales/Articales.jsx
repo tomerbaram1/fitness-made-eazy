@@ -2,16 +2,12 @@ import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import ListSubheader from "@mui/material/ListSubheader";
-import IconButton from "@mui/material/IconButton";
-import InfoIcon from "@mui/icons-material/Info";
 import "./articales.css";
 import { Button } from "@mui/material";
-import ArticalesHeader from "./ArticalesHeader";
 export default function TitlebarImageList() {
   return (
     <>
-      <ArticalesHeader></ArticalesHeader>
+      {/* <ArticalesHeader></ArticalesHeader> */}
       <div className="artical-container">
         <div className="artical-section-container">
           <ImageList sx={{ width: 500, height: 450 }}>

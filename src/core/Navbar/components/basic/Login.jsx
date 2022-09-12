@@ -1,7 +1,7 @@
 // import * as React from "react";
 import Backdrop from "@mui/material/Backdrop";
 import { useSelector, useDispatch } from "react-redux";
-import { open, close } from "../../../../reducers/OpenLoginSlice";
+import { close } from "../../../../reducers/OpenLoginSlice";
 // import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
@@ -39,11 +39,7 @@ const style = {
 export default function TransitionsModal() {
   const openLogin = useSelector((state) => state.openLogin.value);
   const dispatch = useDispatch();
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => {
-    dispatch(open());
-    setShowOverlay(true);
-  };
+
   const handleClose = () => {
     dispatch(close());
     setShowOverlay(false);
@@ -54,10 +50,6 @@ export default function TransitionsModal() {
     password: "",
     showPassword: false,
   });
-
-  const localHandleChange = (prop) => (event) => {
-    setlocalValues({ ...localValues, [prop]: event.target.value });
-  };
 
   const handleClickShowPassword = () => {
     setlocalValues({
