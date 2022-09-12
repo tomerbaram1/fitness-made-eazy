@@ -10,7 +10,6 @@
 .text {
   font-family: "Nunito", sans-serif;
   text-align: center;
-  /* width: 90vw; */
 }
 .ourStory {
   display: flex;
@@ -46,6 +45,10 @@
   color: rgb(242, 163, 5);
   font-size: 100%;
 }
+.people-img {
+    height: 100%;
+    width: 100%;
+}
 
 .videoAbout {
   width: 100%;
@@ -64,6 +67,40 @@
     height: 40vh;
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+    justify-content: center; 
+ }
+.power{
+    color: rgb(242, 163, 5);
+    font-size: 100%;
+}
+
+    .videoAbout {
+      width: 100%;
+      height: 70vh;
+      object-fit: contain;
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        .videoAbout {
+          width: 100%;
+          height: 30%;
+          object-fit: contain;
+        }
+        .text-header{
+            font-size: 100%;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+           
+         }
+         .text-header{
+            font-size: 20vh;
+         }
+
+      }
   }
 }
 

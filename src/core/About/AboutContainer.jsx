@@ -10,8 +10,8 @@ export default function AboutContainer(props) {
       <div className="text">
         <div className="text-header">
           <h1>
-            The greatest <span className="orange">power</span> is knowledge and
-            knowledge is our <span className="orange">POWER</span>
+            The greatest <span className="power">power</span> is knowledge and
+            knowledge is our <span className="power">POWER</span>
           </h1>
         </div>
 

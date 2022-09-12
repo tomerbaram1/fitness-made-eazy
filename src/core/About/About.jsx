@@ -8,6 +8,8 @@ export default function About() {
     <div className="about">
       <Navbar />
       <AboutContainer />
+      <br />
+
       <Footer />
     </div>
   );
