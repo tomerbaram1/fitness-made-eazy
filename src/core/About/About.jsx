@@ -10,6 +10,8 @@ export default function About() {
       <br />
       <br />
       <AboutContainer />
+      <br />
+
       <Footer />
     </div>
   );
