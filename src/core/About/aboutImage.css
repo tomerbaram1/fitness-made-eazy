@@ -41,12 +41,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .about-head {
+  .about-head{
     display: none;
   }
+
 }
 @media only screen and (max-width: 1024px) {
-  .about-head {
+  .about-head{
     display: none;
   }
+
 }
