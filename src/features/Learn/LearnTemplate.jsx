@@ -24,7 +24,7 @@ const LearnTemplate = (props) => {
                 <span style={{ color: "orange" }}> one free</span>
               </h1>
               <div className="addtocartbutton">
-                <BasicButtons />
+                <BasicButtons handleClick={() => props.handleBuy()} />
               </div>
             </div>
           </div>
