@@ -1,0 +1,4 @@
+/home              /about us
+/home  /programs
+/home              /blog
+/home            https://www.petsofnetlify.com
