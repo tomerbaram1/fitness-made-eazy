@@ -57,7 +57,6 @@ export default function MyCart(props) {
       <div className="buttonsContainer">
         <Button
           size="Large"
-          sx={{ color: "orange" }}
           variant="contained"
           onClick={() => {
             setOpenPaymentMethod(true);

@@ -213,16 +213,31 @@ ul {
 }
 
 @media only screen and (max-width: 995px) {
-  .MuiImageListItem-root.MuiImageListItem-standard.article-images.css-ta95xa-MuiImageListItem-root
-    .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-    position: absolute;
-    z-index: 4;
-    background-color: rgb(242, 163, 5, 0.85);
-    font-size: large;
-    font-weight: bold;
-    color: white;
-    height: 30px;
-    font-size: medium;
-    width: 170px;
+  .readMoreButton {
+    position: absolute !important;
+    z-index: 4 !important;
+    background-color: rgb(242, 163, 5, 0.85) !important;
+    font-size: large !important;
+    font-weight: bold !important;
+    color: white !important;
+    height: 6vh !important;
+    font-size: medium !important;
+    width: 15vw !important;
   }
+}
+.readMoreButton {
+  color: rgba(255, 255, 255, 0.832) !important;
+  background-color: rgba(255, 166, 0, 0.727) !important;
+  position: absolute !important;
+  z-index: 4 !important;
+  background-color: rgb(242, 163, 5, 0.85) !important;
+  font-size: large !important;
+  font-weight: bold !important;
+  color: white !important;
+  height: 7vh !important;
+  font-size: medium !important;
+  width: 15vw !important;
+}
+.readMoreButton:hover {
+  background-color: rgba(155, 101, 0, 0.727) !important;
 }
