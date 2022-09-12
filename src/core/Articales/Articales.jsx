@@ -27,7 +27,11 @@ export default function TitlebarImageList() {
                 <div className="articaleOverlay"></div>
                 <div>
                   <h1 className="articaleTitle">{item.title}</h1>
-                  <Button className="readMoreButton"><a href={item.link} target="_blank">READ MORE</a></Button>
+                  <Button className="readMoreButton">
+                    <a href={item.link} rel="noreferrer" target="_blank">
+                      READ MORE
+                    </a>
+                  </Button>
                 </div>
 
                 <ImageListItemBar
