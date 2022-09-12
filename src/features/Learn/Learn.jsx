@@ -12,8 +12,6 @@ const Learn = () => {
   const selectedProgram = useSelector((state) => state.selectedProgram.value);
   const dispatch = useDispatch();
 
-  console.log(selectedProgram);
-
   const handleBuy = (image, title, price) => {
     dispatch(addToMyCart({ image: image, title: title, price: price }));
   };

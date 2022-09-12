@@ -9,8 +9,6 @@
   padding: 10px;
   justify-content: center;
   margin-top: 4%;
-  animation: fadeIn;
-  animation-duration: 2s;
 }
 .program-card {
   overflow: hidden;
