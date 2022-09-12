@@ -1,45 +1,73 @@
-.container{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: gray;
+  padding-top: 5%;
 }
-.text{
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-
+.text {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
 }
- .ourStory{
-    display: flex;
-    flex-direction: column;
-    height: 35%;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.ourStory {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
-    margin-bottom: 8%;
- }
-.people-img img{
-height: 50%;
-width: 20%;
-margin: 1%;
+  margin-bottom: 8%;
+}
+.people-img img {
+  height: 50%;
+  width: 20%;
+  margin: 1%;
+}
+
+.text-header {
+  font-size: 100%;
+  height: 15vh;
+  width: 100%;
+  text-align: center;
+  /* background: rgba(176, 176, 176, 0.264); */
+
+  /* background: rgb(205 203 198); */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.orange {
+  color: rgb(242, 163, 5);
+  font-size: 100%;
 }
 .people-img {
     height: 100%;
     width: 100%;
 }
 
- .text-header{
-    font-size: 100%;
-    height: 15vh;
+.videoAbout {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  video {
     width: 100%;
-    text-align: center;
-background: rgb(205 203 198);
-color: black;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .text-header {
+    font-size: 100%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center; 
  }
@@ -52,7 +80,6 @@ color: black;
       width: 100%;
       height: 70vh;
       object-fit: contain;
-
 
     }
 
@@ -74,25 +101,25 @@ color: black;
          }
 
       }
+  }
+}
 
 @media only screen and (max-width: 768px) {
-    .text{
-        height: 100%;
-        width: 100%;
-    }
-
+  .text {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-    video {
-
-        height: 70vh;
-        object-fit: cover;
-      }
-      .text-header{
-          font-size: 100%;
-          height: 40vh;
-          display: flex;
-          flex-direction: column;
-       }
+  video {
+    height: 70vh;
+    object-fit: cover;
+  }
+  .text-header {
+    font-size: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+  }
 }

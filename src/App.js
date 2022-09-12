@@ -3,8 +3,6 @@ import Home from "./features/Home/Home";
 import { Routes, Route } from "react-router-dom";
 import { Programs } from "./features/Programs/Programs";
 import Learn from "./features/Learn/Learn";
-import { useEffect } from "react";
-import AboutImage from "./core/About/AboutImage";
 import GenderQuestein from "./features/Quiz/GenderQuestein";
 import QuestionOne from "./features/Quiz/questions/QuestionOne";
 import QuestionTwo from "./features/Quiz/questions/QuestionTwo";
@@ -46,9 +44,8 @@ function App() {
           element={<QuestionFive></QuestionFive>}
         ></Route>
         <Route path="/quizAnswer" element={<QuizAnswer></QuizAnswer>}></Route>
-        <Route path="/AboutUs" element={<About/>}></Route>
+        <Route path="/AboutUs" element={<About />}></Route>
       </Routes>
-
     </div>
   );
 }

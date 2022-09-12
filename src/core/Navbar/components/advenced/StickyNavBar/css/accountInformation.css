@@ -1,5 +1,6 @@
 .accontMenuContainer {
   margin-top: 3.5%;
+  right: 0;
 }
 .accountInformationContainer {
   margin-right: 5%;
@@ -33,4 +34,26 @@ hr {
   margin: 0 !important;
   align-content: center !important;
   align-items: center !important;
+  width: 100% !important;
+  /* margin-left: 25% !important; */
+}
+.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.accInfoHR {
+  width: 80%;
+  margin-left: 10%;
+}
+@media only screen and (max-width: 768px) {
+  .accountInformationContainer {
+    margin: 0;
+  }
+  .MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list {
+    width: 95vw;
+  }
+  .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    top: 10vh !important;
+  }
 }

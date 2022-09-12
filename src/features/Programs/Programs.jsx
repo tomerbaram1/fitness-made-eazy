@@ -4,8 +4,7 @@ import Navbar from "../../core/Navbar/Navbar";
 import Footer from "../../core/Footer/Footer";
 import { Program } from "./Program";
 import Questeins from "./Questeins";
-import AboutHeader from "../../core/About/AboutHeader";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { change } from "../../reducers/SelectedProgramSlice";
 import { addToMyCart } from "../../reducers/MyCartSlice";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -183,9 +182,7 @@ export const Programs = (props) => {
               title="Women's Specialization Program"
               img="https://cdn.pixabay.com/photo/2015/07/02/10/21/training-828715_1280.jpg"
               price="100$"
-              handleClick={() =>
-                handleClick("Women's Specialization Program")
-              }
+              handleClick={() => handleClick("Women's Specialization Program")}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -230,7 +227,6 @@ export const Programs = (props) => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <AboutHeader />
       <Questeins />
       <Footer />
     </div>

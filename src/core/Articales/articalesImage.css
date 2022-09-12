@@ -27,23 +27,25 @@
 
   background: #f2a305b3;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
+  background: -webkit-linear-gradient(
+    to right,
 
-      #f2a305b3,
-      #000000b3);
+    #f2a305b3,
+    #000000b3
+  );
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
+  background: linear-gradient(
+    to right,
 
-      #f2a305b3,
-      #000000b3);
+    #f2a305b3,
+    #000000b3
+  );
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   z-index: 2;
 }
 
-
-
-@media only screen and (min-width:1600px) {
+@media only screen and (min-width: 1600px) {
   .articalesImageContainer {
     width: 98.7vw;
     height: 300px;
@@ -52,7 +54,7 @@
   }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .articalesImageContainer {
     display: none;
   }

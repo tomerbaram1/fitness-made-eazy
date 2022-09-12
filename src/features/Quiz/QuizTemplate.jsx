@@ -2,21 +2,17 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import QuizButton from "./QuizButton";
 import "./css/templateQuestion.css";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { addToGrade } from "../../reducers/QuizGradeSlice";
-import { change } from "../../reducers/SelectedProgramSlice";
 
 import { Collapse, CssBaseline, IconButton } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function QuizTemplate(props) {
   const dispatch = useDispatch();
-  const quizGrade = useSelector((state) => state.quizGrade.QuizGrade);
-  const selectedProgram = useSelector((state) => state.selectedProgram.value);
 
   const [value, setValue] = useState("-select-");
-  const [quizResult, setQuizResult] = useState("");
   const handleChange = (event) => {
     setValue(event.target.value);
   };
@@ -168,6 +164,8 @@ function QuizTemplate(props) {
             break;
         }
         break;
+      default:
+        break;
     }
   };
   const [checked, setChecked] = useState(false);
@@ -178,7 +176,6 @@ function QuizTemplate(props) {
     <React.Fragment>
       <CssBaseline />
       <>
-        <br /> <br /> <br /> <br /> <br /> <br /> <br />
         <div className="question-body">
           <Collapse
             in={checked}

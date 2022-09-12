@@ -1,8 +1,6 @@
-import QuizButton from "../QuizButton";
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
 import Navbar from "../../../core/Navbar/Navbar";
-import Footer from "../../../core/Footer/Footer";
 
 function QuestionFive() {
   const questions = [
@@ -20,7 +18,6 @@ function QuestionFive() {
         buttonLinkTo={"/quizAnswer"}
         questions={questions}
       />
-      <Footer />
     </div>
   );
 }

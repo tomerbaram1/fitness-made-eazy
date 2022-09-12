@@ -8,8 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Collapse, IconButton } from "@mui/material";
 import { useEffect } from "react";
 import { useState } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function MainContainer() {
   const [checked, setChecked] = useState(false);
   useEffect(() => {

@@ -7,8 +7,6 @@ export default function About() {
   return (
     <div className="about">
       <Navbar />
-      <br />
-      <br />
       <AboutContainer />
       <br />
 

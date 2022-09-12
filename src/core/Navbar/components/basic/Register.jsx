@@ -1,10 +1,7 @@
 // import * as React from "react";
 import Backdrop from "@mui/material/Backdrop";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  openRegisterFunction,
-  closeRegisterFunction,
-} from "../../../../reducers/OpenRegisterSlice";
+import { closeRegisterFunction } from "../../../../reducers/OpenRegisterSlice";
 // import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
@@ -43,11 +40,7 @@ const style = {
 export default function TransitionsModal() {
   const openRegister = useSelector((state) => state.openRegister.value);
   const dispatch = useDispatch();
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => {
-    dispatch(openRegisterFunction());
-    setShowOverlay(true);
-  };
+
   const handleClose = () => {
     dispatch(closeRegisterFunction());
     setShowOverlay(false);
@@ -61,10 +54,6 @@ export default function TransitionsModal() {
     repeatPassword: "",
     showPassword: false,
   });
-
-  const localHandleChange = (prop) => (event) => {
-    setlocalValues({ ...localValues, [prop]: event.target.value });
-  };
 
   const handleClickShowPassword = () => {
     setlocalValues({
