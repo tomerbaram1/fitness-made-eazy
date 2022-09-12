@@ -1,7 +1,6 @@
 import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
 import "./articales.css";
 import { Button } from "@mui/material";
 export default function TitlebarImageList() {
@@ -31,25 +30,6 @@ export default function TitlebarImageList() {
                     <Button className="readMoreButton">READ MORE</Button>
                   </a>
                 </div>
-
-                <ImageListItemBar
-                // className="artical-img-itembar"
-                // title={item.title}
-                // actionIcon={
-                //   <IconButton
-                //     sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-                //     aria-label={`info about ${item.title}`}
-                //   >
-                //     <a
-                //       href={item.link}
-                //       target="_blank"
-                //       rel="noopener noreferrer"
-                //     >
-                //       💪
-                //     </a>
-                //   </IconButton>
-                // }
-                />
               </ImageListItem>
             ))}
           </ImageList>
