@@ -237,6 +237,8 @@ ul {
   height: 7vh !important;
   font-size: medium !important;
   width: 15vw !important;
+  top: 68%;
+  left: 13%;
 }
 .readMoreButton:hover {
   background-color: rgba(155, 101, 0, 0.727) !important;
