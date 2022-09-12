@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { useState } from "react";
 import Item from "../../basic/Item";
 import "./css/hamburger.css";

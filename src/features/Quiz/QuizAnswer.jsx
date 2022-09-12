@@ -1,7 +1,6 @@
-import { Button } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { change } from "../../reducers/SelectedProgramSlice";
 import "./css/templateQuestion.css";
 const QuizAnswer = () => {
@@ -54,7 +53,7 @@ const QuizAnswer = () => {
         }
         break;
     }
-  }, []);
+  });
   return (
     <div className="answer-page">
       <div className="answer-card">

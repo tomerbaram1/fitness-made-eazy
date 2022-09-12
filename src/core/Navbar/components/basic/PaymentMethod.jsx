@@ -1,6 +1,5 @@
 // import * as React from "react";
 import Backdrop from "@mui/material/Backdrop";
-import { useSelector, useDispatch } from "react-redux";
 
 // import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -38,9 +37,6 @@ const style = {
 };
 
 const PaymentMethod = (props) => {
-  const handleOpen = () => {
-    setShowOverlay(true);
-  };
   const handleClose = () => {
     props.setOpenPaymentMethod(false);
     setShowOverlay(false);
@@ -55,10 +51,6 @@ const PaymentMethod = (props) => {
 
     showCreditNumber: false,
   });
-
-  const localHandleChange = (prop) => (event) => {
-    setlocalValues({ ...localValues, [prop]: event.target.value });
-  };
 
   const handleClickShowCreditNumber = () => {
     setlocalValues({

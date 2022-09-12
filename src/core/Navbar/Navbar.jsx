@@ -13,6 +13,7 @@ const Navbar = (props) => {
         { title: "Programs", link: "/Programs" },
       ]}
       haveSearch={false}
+      animation={"leftToRightSlideFullScreen"}
     ></StickyNavBar>
   );
 };

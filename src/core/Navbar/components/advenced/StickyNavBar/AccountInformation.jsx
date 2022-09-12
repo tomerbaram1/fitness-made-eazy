@@ -4,25 +4,17 @@ import HowToRegIcon from "@mui/icons-material/HowToReg";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import AddCardIcon from "@mui/icons-material/AddCard";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import LoginIcon from "@mui/icons-material/Login";
 import Login from "../../../components/basic/Login";
 import Register from "../../../components/basic/Register";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 
 import { useSelector, useDispatch } from "react-redux";
-import { open, close } from "../../../../../reducers/OpenLoginSlice";
-import {
-  openRegisterFunction,
-  closeRegisterFunction,
-} from "../../../../../reducers/OpenRegisterSlice";
-import {
-  openMyCartFunction,
-  closeMyCartFunction,
-} from "../../../../../reducers/OpenMyCartSlice";
+import { open } from "../../../../../reducers/OpenLoginSlice";
+import { openRegisterFunction } from "../../../../../reducers/OpenRegisterSlice";
+
 import MyCart from "./MyCart";
 
 const AccountInformation = () => {
@@ -93,23 +85,20 @@ const AccountInformation = () => {
           <AccountCircle fontSize="large"></AccountCircle>
           <h4 className="accountMenuTitle">Welcome</h4>
         </div>
-        <hr></hr>
+        <hr className="accInfoHR"></hr>
         <div className="loginAndRegisterContainer">
-          <MenuItem
-            onClick={() => (dispatch(open()), handleClose)}
-            sx={{ fontWeight: 600 }}
-          >
+          <MenuItem onClick={() => dispatch(open())} sx={{ fontWeight: 600 }}>
             <LoginIcon></LoginIcon> Log In
           </MenuItem>
           <hr></hr>
           <MenuItem
-            onClick={() => (dispatch(openRegisterFunction()), handleClose)}
+            onClick={() => dispatch(openRegisterFunction())}
             sx={{ fontWeight: 600 }}
           >
             <HowToRegIcon></HowToRegIcon> Register
           </MenuItem>
         </div>
-        <hr></hr>
+        <hr className="accInfoHR"></hr>
         <MenuItem
           className="myCartButtonContainer"
           onClick={toggleDrawer("right", true)}
@@ -117,7 +106,8 @@ const AccountInformation = () => {
         >
           <ShoppingCartIcon></ShoppingCartIcon>My Cart
         </MenuItem>
-        <hr></hr>
+        <hr className="accInfoHR"></hr>
+        <h6 style={{ textAlign: "center" }}>Fitness Made Eazy</h6>
       </Menu>
       <Login openLogin={openLogin} setOpenLogin={setOpenLogin}></Login>
       <Register

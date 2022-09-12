@@ -1,7 +1,6 @@
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
 import Navbar from "../../../core/Navbar/Navbar";
-import Footer from "../../../core/Footer/Footer";
 function QuestionFour() {
   const questions = [
     { text: "Improve my Strength + Muscle" },
@@ -18,7 +17,6 @@ function QuestionFour() {
         questions={questions}
         buttonLinkTo={"/QuestionFive"}
       />
-      <Footer />
     </div>
   );
 }

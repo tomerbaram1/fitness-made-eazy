@@ -1,8 +1,6 @@
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
-
 import Navbar from "../../../core/Navbar/Navbar";
-import Footer from "../../../core/Footer/Footer";
 
 function QuestionOne() {
   const questions = [
@@ -21,7 +19,6 @@ function QuestionOne() {
         questions={questions}
         buttonLinkTo="/questionTwo"
       />
-      <Footer />
     </div>
   );
 }

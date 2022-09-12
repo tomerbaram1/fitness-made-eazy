@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <section className="main-container">
       <div className="mainOverlay"></div>
-      <video src={videoBg} autoPlay loop muted />
+      <video className="mainVideo" src={videoBg} autoPlay loop muted />
       <MainContainer />
     </section>
   );

@@ -177,6 +177,7 @@ nav.netflix {
     margin: 0;
     text-align: center;
     justify-content: space-evenly;
+    position: absolute;
   }
   .logoContainer {
     display: none;
@@ -191,6 +192,6 @@ nav.netflix {
     display: none;
   }
   .navBarContainer {
-    justify-content: center;
+    justify-content: flex-end;
   }
 }

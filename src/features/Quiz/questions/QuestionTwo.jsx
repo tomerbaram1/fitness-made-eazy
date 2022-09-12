@@ -1,7 +1,6 @@
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
 
-import Footer from "../../../core/Footer/Footer";
 import BmiCalc from "./BmiCalc";
 import Navbar from "../../../core/Navbar/Navbar";
 
@@ -22,7 +21,6 @@ function QuestionTwo(props) {
         buttonLinkTo={"/questionthree"}
       />
       <BmiCalc />
-      <Footer />
     </div>
   );
 }

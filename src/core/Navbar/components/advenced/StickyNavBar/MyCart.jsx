@@ -1,6 +1,4 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 
 import "./css/myCart.css";
@@ -8,7 +6,6 @@ import CartItem from "../../basic/CartItem.jsx";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { grey } from "@mui/material/colors";
 import { useDispatch, useSelector } from "react-redux";
-import { closeMyCartFunction } from "../../../../../reducers/OpenMyCartSlice";
 import {
   removeFromMyCart,
   addToMyCart,
