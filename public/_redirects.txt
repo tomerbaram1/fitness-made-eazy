@@ -1,4 +1,1 @@
-/home              /about us
-/home  /programs
-/home              /blog
-/home            https://www.petsofnetlify.com
+/*    /index.html    200
