@@ -1,28 +1,25 @@
-
 .values-container {
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    gap: 5rem;
-    padding: 4%;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  gap: 5rem;
+  padding: 4%;
+  justify-content: center;
+  margin-top: 5%;
+  border-top: 1px rgba(0, 0, 0, 0.111) solid;
+  border-bottom: 1px rgba(0, 0, 0, 0.111) solid;
+  background: rgba(176, 176, 176, 0.264);
+}
+
+@media only screen and (max-width: 768px) {
+  .values-container {
     margin-top: 5%;
     border-top: 1px rgba(0, 0, 0, 0.111) solid;
     border-bottom: 1px rgba(0, 0, 0, 0.111) solid;
-    background: rgba(176, 176, 176, 0.264);
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1%;
+    padding: 4%;
+    justify-content: center;
   }
-  .valueBox {
-
-  }
-  @media only screen and (max-width: 768px) {
-    .values-container {
-        margin-top: 5%;
-        border-top: 1px rgba(0, 0, 0, 0.111) solid;
-        border-bottom: 1px rgba(0, 0, 0, 0.111) solid;
-        margin-bottom: 5%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 1%;
-        padding: 4%;
-        justify-content: center;
-      }
 }
