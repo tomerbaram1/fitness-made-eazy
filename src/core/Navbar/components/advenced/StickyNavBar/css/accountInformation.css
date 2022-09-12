@@ -56,4 +56,8 @@ hr {
   .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
     top: 10vh !important;
   }
+  .accontMenuContainer {
+    width: 95vw !important;
+    /* margin-right: ; */
+  }
 }

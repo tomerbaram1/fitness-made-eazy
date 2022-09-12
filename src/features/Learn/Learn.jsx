@@ -3,12 +3,18 @@ import "./learn.css";
 import Navbar from "../../core/Navbar/Navbar";
 import ActionAreaCard from "./LearnCard";
 import LearnTemplate from "./LearnTemplate";
+import { addToMyCart } from "../../reducers/MyCartSlice";
+import { useDispatch } from "react-redux";
 
 import { useSelector } from "react-redux";
 
 const Learn = () => {
   const selectedProgram = useSelector((state) => state.selectedProgram.value);
-  console.log(selectedProgram);
+  const dispatch = useDispatch();
+
+  const handleBuy = (image, title, price) => {
+    dispatch(addToMyCart({ image: image, title: title, price: price }));
+  };
 
   return (
     <div>
@@ -23,6 +29,13 @@ const Learn = () => {
           title1="PUSH"
           title2="PULL"
           title3="LEGS"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2016/03/27/07/08/man-1282232_1280.jpg",
+              "Power Lifting",
+              250
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
@@ -36,6 +49,13 @@ const Learn = () => {
           title1="UP"
           title2="AND"
           title3="AWAY"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2018/04/04/16/44/kettlebell-3290296_1280.jpg",
+              "Calisthenics",
+              150
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
@@ -49,6 +69,13 @@ const Learn = () => {
           title1="BACK"
           title2="TO"
           title3="BASICS"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2016/11/19/12/43/dark-1839088_1280.jpg",
+              "Fundementals",
+              100
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
@@ -62,6 +89,13 @@ const Learn = () => {
           title1="WOMEN"
           title2="SPECIAL"
           title3="ADION"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2015/07/02/10/21/training-828715_1280.jpg",
+              "Women's Specialization Program",
+              100
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
@@ -75,6 +109,13 @@ const Learn = () => {
           title1="NO PAIN"
           title2="NO"
           title3="GAIN"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2017/09/27/18/49/sport-2792995_1280.jpg",
+              "Full Body Workout",
+              300
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
@@ -88,6 +129,13 @@ const Learn = () => {
           title1="GET"
           title2="STRONGER"
           title3="LEGS"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2017/04/20/08/35/sport-2245029_1280.jpg",
+              "Lower Body Workout",
+              200
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
@@ -101,6 +149,13 @@ const Learn = () => {
           title1="GET"
           title2="STRONGER"
           title3="AND BIG"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2018/12/28/16/16/exercise-3899877_1280.jpg",
+              "Upper Body Workout",
+              200
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
@@ -114,6 +169,13 @@ const Learn = () => {
           title1="GET"
           title2="YOUR"
           title3="ABS"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2016/04/13/17/00/plank-1327256_1280.jpg",
+              "Core",
+              100
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
@@ -127,6 +189,13 @@ const Learn = () => {
           title1="GET"
           title2="FIT"
           title3="QUICK"
+          handleBuy={() =>
+            handleBuy(
+              "https://cdn.pixabay.com/photo/2020/11/10/15/08/crossfit-5730105_1280.jpg",
+              "Crossfit",
+              200
+            )
+          }
         ></LearnTemplate>
       ) : (
         <div />
