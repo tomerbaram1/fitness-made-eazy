@@ -83,10 +83,10 @@
     width: 95vw;
     margin-left: 2.5vw;
   }
-  .buttonsContainer .css-sghohy-MuiButtonBase-root-MuiButton-root {
+  .buttonsContainer .myCartButton {
     width: 80vw;
   }
-  .buttonsContainer .css-1plxeyz-MuiButtonBase-root-MuiButton-root {
+  .buttonsContainer .myCartButtonTwo {
     width: 80vw;
     height: 6vh;
   }

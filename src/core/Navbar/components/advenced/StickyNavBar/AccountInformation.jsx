@@ -1,17 +1,17 @@
-import "./css/accountInformation.css";
-import * as React from "react";
-import HowToRegIcon from "@mui/icons-material/HowToReg";
-import IconButton from "@mui/material/IconButton";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
+import HowToRegIcon from "@mui/icons-material/HowToReg";
 import LoginIcon from "@mui/icons-material/Login";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import * as React from "react";
 import Login from "../../../components/basic/Login";
 import Register from "../../../components/basic/Register";
-import Drawer from "@mui/material/Drawer";
+import "./css/accountInformation.css";
 
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { open } from "../../../../../reducers/OpenLoginSlice";
 import { openRegisterFunction } from "../../../../../reducers/OpenRegisterSlice";
 

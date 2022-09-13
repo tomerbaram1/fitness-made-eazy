@@ -1,18 +1,18 @@
 import React from "react";
-import "./programs.css";
-import Navbar from "../../core/Navbar/Navbar";
-import Footer from "../../core/Footer/Footer";
-import { Program } from "./Program";
-import Questeins from "./Questeins";
 import { useDispatch } from "react-redux";
-import { change } from "../../reducers/SelectedProgramSlice";
-import { addToMyCart } from "../../reducers/MyCartSlice";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Footer from "../../core/Footer/Footer";
+import Navbar from "../../core/Navbar/Navbar";
+import { addToMyCart } from "../../reducers/MyCartSlice";
+import { change } from "../../reducers/SelectedProgramSlice";
+import { Program } from "./Program";
+import "./programs.css";
+import Questeins from "./Questeins";
 
-import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
+import "swiper/css/effect-cards";
 export const Programs = (props) => {
   const dispatch = useDispatch();
 

@@ -1,16 +1,16 @@
-import * as React from "react";
 import Button from "@mui/material/Button";
+import * as React from "react";
 
-import "./css/myCart.css";
-import CartItem from "../../basic/CartItem.jsx";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { grey } from "@mui/material/colors";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  removeFromMyCart,
   addToMyCart,
+  removeFromMyCart,
 } from "../../../../../reducers/MyCartSlice";
+import CartItem from "../../basic/CartItem.jsx";
 import PaymentMethod from "../../basic/PaymentMethod";
+import "./css/myCart.css";
 export default function MyCart(props) {
   const [openPaymentMethod, setOpenPaymentMethod] = React.useState(false);
   const cartItems = useSelector((state) => state.myCart.MyCartItems);
@@ -56,6 +56,7 @@ export default function MyCart(props) {
       <h1 className="cartSum">sum: {priceSum}$</h1>
       <div className="buttonsContainer">
         <Button
+          className="myCartButton"
           size="Large"
           variant="contained"
           onClick={() => {
@@ -65,6 +66,7 @@ export default function MyCart(props) {
           Procced To Checkout
         </Button>
         <Button
+          className="myCartButtonTwo"
           size="Large"
           variant="contained"
           sx={{ bgcolor: grey[500] }}
