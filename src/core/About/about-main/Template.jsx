@@ -3,8 +3,7 @@ import "./aboutMain.css";
 const Template = (props) => {
   return (
     <div className="valueBox">
-
-      <img src={props.img} />
+      <img alt="about" src={props.img} />
 
       <img alt="about" src={props.img} />
 

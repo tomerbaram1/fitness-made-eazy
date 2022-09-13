@@ -79,7 +79,6 @@ const AccountInformation = () => {
         }}
         open={Boolean(anchorEl)}
         onClose={handleClose}
-        className="accontMenuContainer"
       >
         <div style={{ textAlign: "center" }}>
           <AccountCircle fontSize="large"></AccountCircle>
