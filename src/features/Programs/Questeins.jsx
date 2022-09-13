@@ -1,6 +1,6 @@
 import React from "react";
-import "./questeins.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./questeins.css";
 
 import "swiper/css";
 import "swiper/css/pagination";

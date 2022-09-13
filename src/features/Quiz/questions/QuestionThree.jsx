@@ -1,6 +1,6 @@
 import React from "react";
-import QuizTemplate from "../QuizTemplate";
 import Navbar from "../../../core/Navbar/Navbar";
+import QuizTemplate from "../QuizTemplate";
 function QuestionThree(props) {
   const questions = [
     { text: "No History (never trained before)" },

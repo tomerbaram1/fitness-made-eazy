@@ -1,7 +1,7 @@
-import "./main.css";
 import React from "react";
-import MainContainer from "./MainContainer";
 import videoBg from "../Main/fitnessVideo.mp4";
+import "./main.css";
+import MainContainer from "./MainContainer";
 
 const Main = () => {
   return (

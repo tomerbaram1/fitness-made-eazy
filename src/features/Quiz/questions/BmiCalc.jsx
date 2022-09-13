@@ -1,5 +1,5 @@
-import "../css/bmi.css";
 import React, { useState } from "react";
+import "../css/bmi.css";
 
 export default function BmiCalc() {
   const [bmi, setBmi] = useState();

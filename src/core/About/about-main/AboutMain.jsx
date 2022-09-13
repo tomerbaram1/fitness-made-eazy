@@ -1,7 +1,7 @@
 import React from "react";
 import Info from "../Info";
-import Template from "./Template";
 import "./aboutMain.css";
+import Template from "./Template";
 
 const AboutMain = (props) => {
   return (

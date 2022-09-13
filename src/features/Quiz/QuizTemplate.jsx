@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import QuizButton from "./QuizButton";
-import "./css/templateQuestion.css";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { addToGrade } from "../../reducers/QuizGradeSlice";
+import "./css/templateQuestion.css";
+import QuizButton from "./QuizButton";
 
-import { Collapse, CssBaseline, IconButton } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Collapse, CssBaseline, IconButton } from "@mui/material";
 
 function QuizTemplate(props) {
   const dispatch = useDispatch();

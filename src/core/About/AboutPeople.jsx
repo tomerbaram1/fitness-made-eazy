@@ -1,9 +1,9 @@
 import React from "react";
-import Info from "./Info";
-import tomerImg from "./img/tomer.jpeg";
-import sagiImg from "./img/sagi.jpeg";
-import raniImg from "./img/rani.jpeg";
 import "./aboutContainer.css";
+import raniImg from "./img/rani.jpeg";
+import sagiImg from "./img/sagi.jpeg";
+import tomerImg from "./img/tomer.jpeg";
+import Info from "./Info";
 const AboutPeople = () => {
   return (
     <div className="aboutPeople">

@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
 import React from "react";
-import "./css/templateQuestion.css";
-import Navbar from "../../core/Navbar/Navbar";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import Navbar from "../../core/Navbar/Navbar";
 import { setIsWomanFalse, setIsWomanTrue } from "../../reducers/QuizGradeSlice";
+import "./css/templateQuestion.css";
 
 function GenderQuestein() {
   const dispatch = useDispatch();

@@ -1,8 +1,8 @@
 import React from "react";
 import QuizTemplate from "../QuizTemplate";
 
-import BmiCalc from "./BmiCalc";
 import Navbar from "../../../core/Navbar/Navbar";
+import BmiCalc from "./BmiCalc";
 
 function QuestionTwo(props) {
   const questions = [

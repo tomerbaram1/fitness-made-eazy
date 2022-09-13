@@ -1,11 +1,11 @@
+import { useState } from "react";
 import Item from "../../basic/Item.jsx";
 import Logo from "../../basic/Logo.jsx";
 import Search from "../../basic/Search.jsx";
 import Title from "../../basic/Title.jsx";
-import Hamburger from "./Hamburger";
-import "./css/stickyNavBar.css";
-import { useState } from "react";
 import AccountInformation from "./AccountInformation.jsx";
+import "./css/stickyNavBar.css";
+import Hamburger from "./Hamburger";
 
 const StickyNavBar = (props) => {
   const [navVisible, setNavVisible] = useState("visible");

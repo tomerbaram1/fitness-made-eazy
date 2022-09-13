@@ -1,14 +1,12 @@
-import React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import MainButton from "./MainButton";
-import "./mainContainer.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Collapse, IconButton } from "@mui/material";
-import { useEffect } from "react";
-import { useState } from "react";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import MainButton from "./MainButton";
+import "./mainContainer.css";
 export default function MainContainer() {
   const [checked, setChecked] = useState(false);
   useEffect(() => {

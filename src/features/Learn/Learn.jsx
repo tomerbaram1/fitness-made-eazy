@@ -1,10 +1,10 @@
 import React from "react";
-import "./learn.css";
+import { useDispatch } from "react-redux";
 import Navbar from "../../core/Navbar/Navbar";
+import { addToMyCart } from "../../reducers/MyCartSlice";
+import "./learn.css";
 import ActionAreaCard from "./LearnCard";
 import LearnTemplate from "./LearnTemplate";
-import { addToMyCart } from "../../reducers/MyCartSlice";
-import { useDispatch } from "react-redux";
 
 import { useSelector } from "react-redux";
 

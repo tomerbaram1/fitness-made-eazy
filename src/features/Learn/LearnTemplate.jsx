@@ -1,6 +1,6 @@
+import "animate.css";
 import "./learn.css";
 import BasicButtons from "./LearnButton";
-import "animate.css";
 const LearnTemplate = (props) => {
   return (
     <div>

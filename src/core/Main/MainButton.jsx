@@ -1,6 +1,6 @@
-import * as React from "react";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
+import * as React from "react";
 import "./mainContainer.css";
 
 export default function BasicButtons({ name }) {
