@@ -27,6 +27,9 @@
   background-color: white;
   width: 20vw;
   height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 hr {
   border-top: 1px solid grey;
