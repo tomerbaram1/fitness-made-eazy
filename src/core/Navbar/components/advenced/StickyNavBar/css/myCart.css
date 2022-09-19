@@ -106,4 +106,13 @@
   .cartSum {
     text-align: center;
   }
+  .buttonsContainer
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeLarge.MuiButton-containedSizeLarge.myCartButton.css-1hw9j7s {
+    width: 80vw;
+  }
+  .buttonsContainer
+    .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeLarge.MuiButton-containedSizeLarge.myCartButtonTwo.css-5xfyy2 {
+    width: 80vw;
+    height: 6vh;
+  }
 }
