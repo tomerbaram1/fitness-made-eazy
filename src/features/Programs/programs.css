@@ -20,8 +20,7 @@
   transition: transform 200ms ease-in;
   background-color: rgba(51, 51, 51, 0.195);
   background-color: black;
-  animation: backInDown;
-  animation-duration: 2s;
+
 }
 .card-img {
   background-size: cover;
@@ -71,21 +70,14 @@
 }
 @media only screen and (max-width: 768px) {
   .programs {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(1fr, 1fr));
-    gap: 2rem;
-    justify-content: center;
+
     display: none;
   }
   .program-phone {
     display: block;
-    height: 100%;
-    width: 100%;
-    margin-left: 10%;
+
   }
   .program-card {
-    height: 80vh;
-    width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -10,12 +10,12 @@
   text-align: center;
   margin: 0;
 }
-/* .css-6hp17o-MuiList-root-MuiMenu-list {
+.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 {
   background-color: white;
   width: 20vw;
   height: 70vh;
   margin-right: 200px;
-} */
+}
 hr {
   border-top: 1px solid grey;
 }

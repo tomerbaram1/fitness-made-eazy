@@ -24,6 +24,14 @@
   margin-top: 5% !important;
   background-color: rgb(242, 163, 5) !important;
 }
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeLarge.MuiButton-containedSizeLarge.myCartButton.css-1hw9j7s {
+  margin-top: 5% !important;
+  background-color: rgb(242, 163, 5) !important;
+}
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-1hw9j7s {
+  margin-top: 5% !important;
+  background-color: rgb(242, 163, 5) !important;
+}
 .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
   background-color: rgb(100, 68, 6) !important;
   color: lightgrey !important;

@@ -43,6 +43,15 @@
   width: 30vw;
   height: 30%;
 }
+.buttonsContainer
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeLarge.MuiButton-containedSizeLarge.myCartButton.css-1hw9j7s {
+  width: 30vw;
+  height: 30%;
+}
+.buttonsContainer
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeLarge.MuiButton-containedSizeLarge.myCartButtonTwo.css-5xfyy2 {
+  width: 30vw;
+}
 ::-webkit-scrollbar {
   width: 5px;
 }
