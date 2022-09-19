@@ -10,7 +10,6 @@ export default function AboutContainer(props) {
   return (
     <div id="aboutPage" className="container">
       <div className="text">
-        <AboutHeader />
         <div className="text-header">
           <h1>
             The greatest <span className="power">power</span> is knowledge and
