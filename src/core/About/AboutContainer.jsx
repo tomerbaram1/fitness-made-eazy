@@ -2,7 +2,6 @@ import React from "react";
 import AboutMain from "./about-main/AboutMain";
 import videoAbout from "./about-video.mp4";
 import "./aboutContainer.css";
-import AboutHeader from "./AboutHeader";
 import AboutPeople from "./AboutPeople";
 import Info from "./Info";
 
