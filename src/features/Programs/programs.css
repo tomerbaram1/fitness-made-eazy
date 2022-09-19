@@ -20,7 +20,6 @@
   transition: transform 200ms ease-in;
   background-color: rgba(51, 51, 51, 0.195);
   background-color: black;
-
 }
 .card-img {
   background-size: cover;
@@ -70,12 +69,10 @@
 }
 @media only screen and (max-width: 768px) {
   .programs {
-
     display: none;
   }
   .program-phone {
     display: block;
-
   }
   .program-card {
     display: flex;
@@ -85,6 +82,8 @@
     background-color: rgb(28, 28, 28);
     margin-bottom: 3vh;
     margin-top: 3vh;
+    width: 90%;
+    margin-left: 5%;
   }
   .card-img {
     background-size: cover;
