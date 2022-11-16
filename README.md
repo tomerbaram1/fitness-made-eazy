@@ -8,17 +8,7 @@ https://user-images.githubusercontent.com/110329486/197389622-09b2f2e3-cf99-4b09
 
 
 ## Table Of Contents
-- [Goolo](#Goolo)
-  * [Why was Goolo made and why you should use it](#Why-was-Goolo-made-and-why-you-should-use-it)
-  * [Running the project](#running-the-project)
-  * [Screenshots](#screenshots)
-    + [Goolo Swiper](#Goolo-Swiper)
-    + [Goolo Recommendations](#Goolo-Recommendations)
-  * [Technologies](#technologies)
-    + [Client-Side](#client-side)
-    + [Server-Side](#server-side)
-  * [Whats Next](#whats-next)
-  * [Be a contribute](#be-a-contribute)
+
   
 ## Why was fitness made eazy made and why you should use it
 
